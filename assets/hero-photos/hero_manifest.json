@@ -1,0 +1,578 @@
+[
+  {
+    "spot": "Kapas Biru Panoramic View",
+    "slug": "kapas_biru_panorama_01",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20Kapas%20Biru%20%2853991163525%29.jpg?width=1400",
+    "page": "https://commons.wikimedia.org/wiki/File:Panorama_Kapas_Biru_(53991163525).jpg",
+    "match": "文件页给出相机坐标 -8.225284,112.945365，正是 Kapas Biru Panoramic View；画面应出现瀑布、峡谷和 Semeru 方向。",
+    "note": "用 24-70/70-200 压缩瀑布和 Semeru，清晨雾气好时更有层次。",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Panorama_Kapas_Biru_%2853991163525%29.jpg/1920px-Panorama_Kapas_Biru_%2853991163525%29.jpg",
+    "relative": "assets/hero-photos/kapas_biru_panorama_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/kapas_biru_panorama_01.jpg",
+    "size": [
+      1800,
+      1200
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Kapas Biru Panoramic View",
+    "slug": "kapas_biru_panorama_02",
+    "url": "https://static.promediateknologi.id/crop/179x112:1043x593/1200x0/webp/photo/p1/981/2025/08/16/aasJPG-2143939645.jpg",
+    "page": "https://www.kelumajang.com/wisata/98115739090/panorama-kapas-biru-air-terjun-dengan-latar-gunung-semeru-destinasi-wisata-lumajang-2025-favorit-pecinta-fotografi-alam",
+    "match": "Kelumajang 文章标题和图注明确为 Panorama Kapas Biru，画面强调瀑布 + Gunung Semeru 背景，匹配观景台机位。",
+    "note": "这张用来学习“瀑布 + Semeru + 山谷”的主构图；前一张 Commons 负责坐标核验。",
+    "source_image": "https://static.promediateknologi.id/crop/179x112:1043x593/1200x0/webp/photo/p1/981/2025/08/16/aasJPG-2143939645.jpg",
+    "relative": "assets/hero-photos/kapas_biru_panorama_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/kapas_biru_panorama_02.jpg",
+    "size": [
+      1200,
+      668
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Tumpak Sewu 上方观景台",
+    "slug": "tumpak_upper_01",
+    "url": "https://panoramalenstrip.com/wp-content/uploads/2025/03/Tumpak-Sewu-2.jpg",
+    "page": "https://panoramalenstrip.com/best-photography-spots-at-tumpak-sewu-waterfall/",
+    "match": "摄影点文章明确讨论 Tumpak Sewu 最佳拍摄点；该图对应上方/航拍式半圆瀑布全景。",
+    "note": "目标是半圆瀑布幕布 + 水雾 + 峡谷纵深，优先 16-35/24-70。",
+    "source_image": "https://panoramalenstrip.com/wp-content/uploads/2025/03/Tumpak-Sewu-2.jpg",
+    "relative": "assets/hero-photos/tumpak_upper_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/tumpak_upper_01.jpg",
+    "size": [
+      1800,
+      1013
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Tumpak Sewu 上方观景台",
+    "slug": "tumpak_upper_02",
+    "url": "https://panoramalenstrip.com/wp-content/uploads/2025/03/Tumpak-Sewu-Waterfall-View.png",
+    "page": "https://panoramalenstrip.com/best-photography-spots-at-tumpak-sewu-waterfall/",
+    "match": "图名和页面均为 Tumpak Sewu Waterfall View，匹配上方观景平台/高机位全景，不是谷底。",
+    "note": "注意用前景树/平台边缘控制画面，不要只拍平面瀑布墙。",
+    "source_image": "https://panoramalenstrip.com/wp-content/uploads/2025/03/Tumpak-Sewu-Waterfall-View.png",
+    "relative": "assets/hero-photos/tumpak_upper_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/tumpak_upper_02.jpg",
+    "size": [
+      1399,
+      787
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Tumpak Sewu 谷底",
+    "slug": "tumpak_bottom_01",
+    "url": "https://triptins.com/wp-content/uploads/2016/03/Indonesia-Waterfall-Sewu.jpeg",
+    "page": "https://triptins.com/tumpak-sewu-waterfall/",
+    "match": "TripTins Tumpak Sewu 攻略中瀑布近距离图，画面为谷底仰视/平视水幕语境。",
+    "note": "谷底主打广角水雾和人物尺度，必须防水并听向导。",
+    "source_image": "https://triptins.com/wp-content/uploads/2016/03/Indonesia-Waterfall-Sewu.jpeg",
+    "relative": "assets/hero-photos/tumpak_bottom_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/tumpak_bottom_01.jpg",
+    "size": [
+      1280,
+      960
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Tumpak Sewu 谷底",
+    "slug": "tumpak_bottom_02",
+    "url": "https://www.backindo.com/wp-content/uploads/2024/11/tumpak-sewu-canyon-700x933.jpeg",
+    "page": "https://www.backindo.com/tumpak-sewu-guide/",
+    "match": "Backindo Tumpak Sewu guide 中 canyon/下切路线图，匹配谷底峡谷湿滑环境。",
+    "note": "可拍竖构图峡谷压迫感，但不是安全时才下。",
+    "source_image": "https://www.backindo.com/wp-content/uploads/2024/11/tumpak-sewu-canyon-700x933.jpeg",
+    "relative": "assets/hero-photos/tumpak_bottom_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/tumpak_bottom_02.jpg",
+    "size": [
+      700,
+      933
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Bromo King Kong / Penanjakan 日出",
+    "slug": "bromo_sunrise_01",
+    "url": "https://panoramalenstrip.com/wp-content/uploads/2026/01/best-bromo-sunrise-viewpoints-1.jpg",
+    "page": "https://panoramalenstrip.com/best-bromo-sunrise-viewpoints-ranked/",
+    "match": "页面明确比较 Bromo sunrise viewpoints，并标注 King Kong/Penanjakan 等日出视角。",
+    "note": "长焦压缩 Batok、Bromo 烟柱、Semeru，日出前蓝调就开拍。",
+    "source_image": "https://panoramalenstrip.com/wp-content/uploads/2026/01/best-bromo-sunrise-viewpoints-1.jpg",
+    "relative": "assets/hero-photos/bromo_sunrise_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/bromo_sunrise_01.jpg",
+    "size": [
+      1800,
+      1013
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Bromo King Kong / Penanjakan 日出",
+    "slug": "bromo_sunrise_02",
+    "url": "https://static.saltinourhair.com/wp-content/uploads/2018/09/23150852/visit-bromo-tour-best-view.jpg",
+    "page": "https://www.saltinourhair.com/indonesia/mount-bromo-tour/",
+    "match": "Salt in our Hair Mount Bromo guide 的 best view，画面为经典观景台远眺火山群。",
+    "note": "用 70-200 做主力，烟柱要留飘动方向，Semeru 放远景。",
+    "source_image": "https://static.saltinourhair.com/wp-content/uploads/2018/09/23150852/visit-bromo-tour-best-view.jpg",
+    "relative": "assets/hero-photos/bromo_sunrise_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/bromo_sunrise_02.jpg",
+    "size": [
+      1443,
+      1200
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Bromo 沙海",
+    "slug": "bromo_sand_01",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sea%20of%20Sand%2C%20Bromo%20and%20Batok.jpg?width=1400",
+    "page": "https://commons.wikimedia.org/wiki/File:Sea_of_Sand,_Bromo_and_Batok.jpg",
+    "match": "Commons 文件名明确 Sea of Sand, Bromo and Batok，匹配 Bromo 沙海低机位/环境机位。",
+    "note": "比车内视角更适合参考风光构图：沙海纹理、Batok、Bromo 关系。",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Sea_of_Sand%2C_Bromo_and_Batok.jpg/1920px-Sea_of_Sand%2C_Bromo_and_Batok.jpg",
+    "relative": "assets/hero-photos/bromo_sand_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/bromo_sand_01.jpg",
+    "size": [
+      1800,
+      1200
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Bromo 沙海",
+    "slug": "bromo_sand_02",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bromo%2C%20Java%2C%20Indonesia%2C%2020220820%200636%209502.jpg?width=1400",
+    "page": "https://commons.wikimedia.org/wiki/File:Bromo,_Java,_Indonesia,_20220820_0636_9502.jpg",
+    "match": "Commons 文件名明确 Bromo, Java，画面为沙海/火山环境，替代近距离马匹记录照，更适合作风光构图参考。",
+    "note": "用沙海纹理和远处火山做层次；若有吉普/马队只作为尺度元素。",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Bromo%2C_Java%2C_Indonesia%2C_20220820_0636_9502.jpg/1920px-Bromo%2C_Java%2C_Indonesia%2C_20220820_0636_9502.jpg",
+    "relative": "assets/hero-photos/bromo_sand_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/bromo_sand_02.jpg",
+    "size": [
+      1799,
+      1200
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Pura Luhur Poten",
+    "slug": "pura_poten_01",
+    "url": "https://static.saltinourhair.com/wp-content/uploads/2018/09/23150900/visit-bromo-tour-temple.jpg",
+    "page": "https://www.saltinourhair.com/indonesia/mount-bromo-tour/",
+    "match": "Mount Bromo guide 寺庙图，匹配沙海里的 Pura Luhur Poten。",
+    "note": "拍寺庙屋顶线条与火山背景，停留 15-20 分钟即可。",
+    "source_image": "https://static.saltinourhair.com/wp-content/uploads/2018/09/23150900/visit-bromo-tour-temple.jpg",
+    "relative": "assets/hero-photos/pura_poten_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/pura_poten_01.jpg",
+    "size": [
+      1799,
+      1200
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Pura Luhur Poten",
+    "slug": "pura_poten_02",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luhur%20Poten%20Temple%2C%20Sea%20of%20Sand%2C%20Tengger%20Caldera%2C%20Java%2C%2020220820%200612%209488.jpg?width=1400",
+    "page": "https://commons.wikimedia.org/wiki/File:Luhur_Poten_Temple,_Sea_of_Sand,_Tengger_Caldera,_Java,_20220820_0612_9488.jpg",
+    "match": "Commons 文件名明确 Luhur Poten Temple, Sea of Sand, Tengger Caldera。",
+    "note": "适合学远景尺度：寺庙是沙海中的小主体。",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Luhur_Poten_Temple%2C_Sea_of_Sand%2C_Tengger_Caldera%2C_Java%2C_20220820_0612_9488.jpg/1920px-Luhur_Poten_Temple%2C_Sea_of_Sand%2C_Tengger_Caldera%2C_Java%2C_20220820_0612_9488.jpg",
+    "relative": "assets/hero-photos/pura_poten_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/pura_poten_02.jpg",
+    "size": [
+      801,
+      1200
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Bromo 火山口",
+    "slug": "bromo_crater_01",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bromo-Tengger-Semeru-National-Park%20Indonesia%20Stairway-to-Bromo-crater-02.jpg?width=1200",
+    "page": "https://commons.wikimedia.org/wiki/File:Bromo-Tengger-Semeru-National-Park_Indonesia_Stairway-to-Bromo-crater-02.jpg",
+    "match": "Commons Bromo crater stairway，匹配从沙海上火山口的阶梯站位。",
+    "note": "用阶梯引导线和人物尺度，风大灰大，不频繁换镜。",
+    "relative": "assets/hero-photos/bromo_crater_01.jpg",
+    "status": "ok",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bromo-Tengger-Semeru-National-Park_Indonesia_Stairway-to-Bromo-crater-02.jpg/1280px-Bromo-Tengger-Semeru-National-Park_Indonesia_Stairway-to-Bromo-crater-02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/bromo_crater_01.jpg",
+    "size": [
+      1280,
+      989
+    ]
+  },
+  {
+    "spot": "Bromo 火山口",
+    "slug": "bromo_crater_02",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bromo-Tengger-Semeru-National-Park%20Indonesia%20Bromo-Crater-01.jpg?width=1200",
+    "page": "https://commons.wikimedia.org/wiki/File:Bromo-Tengger-Semeru-National-Park_Indonesia_Bromo-Crater-01.jpg",
+    "match": "Commons Bromo crater 图，匹配火山口内部/口沿烟雾，不是 Ijen 酸湖。",
+    "note": "火山口只做体验和记录，别牺牲观景台与沙海时间。",
+    "relative": "assets/hero-photos/bromo_crater_02.jpg",
+    "status": "ok",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bromo-Tengger-Semeru-National-Park_Indonesia_Bromo-Crater-01.jpg/1280px-Bromo-Tengger-Semeru-National-Park_Indonesia_Bromo-Crater-01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/bromo_crater_02.jpg",
+    "size": [
+      1280,
+      853
+    ]
+  },
+  {
+    "spot": "Ijen 火山湖日出 / crater rim",
+    "slug": "ijen_rim_01",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kawah-Ijen%20Indonesia%20Acidious-Lake-at%20the-floor-of-the-crater-01.jpg?width=1200",
+    "page": "https://commons.wikimedia.org/wiki/File:Kawah-Ijen_Indonesia_Acidious-Lake-at_the-floor-of-the-crater-01.jpg",
+    "match": "Commons 文件名明确 Kawah Ijen acid lake，匹配 Ijen 火山湖而非 Bromo crater。",
+    "note": "火山湖日出比蓝火更稳定；等硫磺烟散开再拍。",
+    "relative": "assets/hero-photos/ijen_rim_01.jpg",
+    "status": "ok",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Kawah-Ijen_Indonesia_Acidious-Lake-at_the-floor-of-the-crater-01.jpg/1280px-Kawah-Ijen_Indonesia_Acidious-Lake-at_the-floor-of-the-crater-01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/ijen_rim_01.jpg",
+    "size": [
+      1280,
+      824
+    ]
+  },
+  {
+    "spot": "Ijen 火山湖日出 / crater rim",
+    "slug": "ijen_rim_02",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kawah%20Ijen%2C%20Java%2C%20Indonesia%2C%2020220821%200608%209712.jpg?width=1400",
+    "page": "https://commons.wikimedia.org/wiki/File:Kawah_Ijen,_Java,_Indonesia,_20220821_0608_9712.jpg",
+    "match": "Commons 文件名明确 Kawah Ijen，画面为日出后火山口湖/烟雾语境。",
+    "note": "如果硫磺烟遮挡，等风向变化；不要把 Bromo crater 图混进来。",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Kawah_Ijen%2C_Java%2C_Indonesia%2C_20220821_0608_9712.jpg/1920px-Kawah_Ijen%2C_Java%2C_Indonesia%2C_20220821_0608_9712.jpg",
+    "relative": "assets/hero-photos/ijen_rim_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/ijen_rim_02.jpg",
+    "size": [
+      1797,
+      1200
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Ijen 蓝火 / 矿工",
+    "slug": "ijen_blue_01",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue%20fire%20of%20Ijen%2C%20Kawah%20Ijen%2C%20Java%2C%20Indonesia%2C%2020220821%200432%209580.jpg?width=1200",
+    "page": "https://commons.wikimedia.org/wiki/File:Blue_fire_of_Ijen,_Kawah_Ijen,_Java,_Indonesia,_20220821_0432_9580.jpg",
+    "match": "Commons 文件名明确 Blue fire of Ijen, Kawah Ijen；这是蓝火实拍，不是文章封面图。",
+    "note": "蓝火只在开放且风向安全时拍；长曝光、三脚架、气体防护优先。",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Blue_fire_of_Ijen%2C_Kawah_Ijen%2C_Java%2C_Indonesia%2C_20220821_0432_9580.jpg/1280px-Blue_fire_of_Ijen%2C_Kawah_Ijen%2C_Java%2C_Indonesia%2C_20220821_0432_9580.jpg",
+    "relative": "assets/hero-photos/ijen_blue_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/ijen_blue_01.jpg",
+    "size": [
+      1280,
+      854
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Ijen 蓝火 / 矿工",
+    "slug": "ijen_miner_02",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kawah-Ijen%20Indonesia%20Ijen-Sulfur-Miner-01.jpg?width=1400",
+    "page": "https://commons.wikimedia.org/wiki/File:Kawah-Ijen_Indonesia_Ijen-Sulfur-Miner-01.jpg",
+    "match": "Commons 文件名明确 Ijen sulfur miner，匹配矿工/硫磺区域，不是摆拍风景。",
+    "note": "拍矿工不要挡路，建议 70-200 远距离压缩烟雾和人物。",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kawah-Ijen_Indonesia_Ijen-Sulfur-Miner-01.jpg/1920px-Kawah-Ijen_Indonesia_Ijen-Sulfur-Miner-01.jpg",
+    "relative": "assets/hero-photos/ijen_miner_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/ijen_miner_02.jpg",
+    "size": [
+      1553,
+      1200
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Nusa Penida 浮潜 / 海况机动",
+    "slug": "penida_manta_01",
+    "url": "https://nusapenida.org/wp-content/uploads/2020/11/Ikan-Pari-Manta-cleaning-station-Nusa-Penida-Bali.jpg",
+    "page": "https://nusapenida.org/bali-nusa-penida-diving-guide/20-best-dive-sites-bali-nusa-penida/diving-manta-point-nusa-penida/",
+    "match": "NusaPenida.org Manta Point guide 图，明确 manta cleaning station。",
+    "note": "这是活动参考图；海况决定是否去 Manta Bay/Point，不把 manta 当作必达目标，不追动物离船。",
+    "source_image": "https://nusapenida.org/wp-content/uploads/2020/11/Ikan-Pari-Manta-cleaning-station-Nusa-Penida-Bali.jpg",
+    "relative": "assets/hero-photos/penida_manta_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/penida_manta_01.jpg",
+    "size": [
+      1024,
+      776
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Nusa Penida 浮潜 / 海况机动",
+    "slug": "penida_crystal_02",
+    "url": "https://nusapenida.org/wp-content/uploads/2018/06/Crystal-Bay-Nusa-Penida-Bali-Drone-1024x768.jpg",
+    "page": "https://nusapenida.org/crystal-bay/",
+    "match": "NusaPenida.org Crystal Bay 页面航拍图，匹配浮潜常见替代点 Crystal Bay 沙滩/离岸小岛；与 Manta 水域分开理解。",
+    "note": "Crystal Bay 是浮潜和海岛氛围参考点；实际是否去由船家按海况安排。",
+    "source_image": "https://nusapenida.org/wp-content/uploads/2018/06/Crystal-Bay-Nusa-Penida-Bali-Drone-1024x768.jpg",
+    "relative": "assets/hero-photos/penida_crystal_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/penida_crystal_02.jpg",
+    "size": [
+      1024,
+      768
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Banah Cliff",
+    "slug": "banah_01",
+    "url": "https://www.journeyera.com/wp-content/uploads/2023/06/banah-cliff-9226.jpg",
+    "page": "https://www.journeyera.com/banah-cliff-point-nusa-penida/",
+    "match": "JourneyEra Banah Cliff guide 封面图，匹配西南海岸悬崖和岩拱。",
+    "note": "只作 D6 路况好、司机确认、17:30 前能回 Kelingking 时的快速支线；返程安全优先。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2023/06/banah-cliff-9226.jpg",
+    "relative": "assets/hero-photos/banah_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/banah_01.jpg",
+    "size": [
+      1200,
+      800
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Banah Cliff",
+    "slug": "banah_02",
+    "url": "https://www.journeyera.com/wp-content/uploads/2018/03/banah-cliff-sunset-03353.jpg",
+    "page": "https://www.journeyera.com/banah-cliff-point-nusa-penida/",
+    "match": "同页 sunset 图，匹配 Banah Cliff 日落方向。",
+    "note": "只作 D6 路况好、司机确认、17:30 前能回 Kelingking 时的快速支线；用人物做尺度但不要靠崖边，无护栏。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2018/03/banah-cliff-sunset-03353.jpg",
+    "relative": "assets/hero-photos/banah_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/banah_02.jpg",
+    "size": [
+      600,
+      900
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Tembeling Beach & Forest",
+    "slug": "tembeling_01",
+    "url": "https://www.weseektravel.com/wp-content/uploads/2021/10/tembeling-beach-forest-natural-pools-nusa-penida-1.jpg",
+    "page": "https://www.weseektravel.com/tembeling-beach-nusa-penida/",
+    "match": "WeseekTravel Tembeling guide 封面，匹配森林/天然池，不是 Angel Billabong。",
+    "note": "Tembeling 不适合赶时间日落，只作 Kelingking 日落取消且司机确认安全时的资料后备。",
+    "source_image": "https://www.weseektravel.com/wp-content/uploads/2021/10/tembeling-beach-forest-natural-pools-nusa-penida-1.jpg",
+    "relative": "assets/hero-photos/tembeling_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/tembeling_01.jpg",
+    "size": [
+      1200,
+      750
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Tembeling Beach & Forest",
+    "slug": "tembeling_02",
+    "url": "https://www.weseektravel.com/wp-content/uploads/2021/10/tembeling-beach-cave-1-1024x683.jpg",
+    "page": "https://www.weseektravel.com/tembeling-beach-nusa-penida/",
+    "match": "Tembeling guide 中 cave/stone beach 图，匹配下切后的石滩洞口。",
+    "note": "拍洞口框景和海浪，但路窄陡，体力不足就放弃；不进入 D6 主行程。",
+    "source_image": "https://www.weseektravel.com/wp-content/uploads/2021/10/tembeling-beach-cave-1-1024x683.jpg",
+    "relative": "assets/hero-photos/tembeling_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/tembeling_02.jpg",
+    "size": [
+      1024,
+      683
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Broken Beach",
+    "slug": "broken_beach_01",
+    "url": "https://www.journeyera.com/wp-content/uploads/2018/03/broken-beach-nusa-penida-bali-0007.jpg",
+    "page": "https://www.journeyera.com/broken-beach-nusa-penida-bali/",
+    "match": "JourneyEra Broken Beach guide 封面，匹配圆形塌陷海湾和天然拱门。",
+    "note": "只拍上方俯视，不下水；与 Angel Billabong 分开标注。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2018/03/broken-beach-nusa-penida-bali-0007.jpg",
+    "relative": "assets/hero-photos/broken_beach_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/broken_beach_01.jpg",
+    "size": [
+      900,
+      600
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Broken Beach",
+    "slug": "broken_beach_02",
+    "url": "https://www.journeyera.com/wp-content/uploads/2018/03/broken-beach-nusa-penida-bali-0040.jpg",
+    "page": "https://www.journeyera.com/broken-beach-nusa-penida-bali/",
+    "match": "同页 Broken Beach 图，天然拱桥结构明确。",
+    "note": "D6 下午快速拍地貌，不恋战；若上午浮潜拖延，可压缩此点，不影响傍晚 Kelingking。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2018/03/broken-beach-nusa-penida-bali-0040.jpg",
+    "relative": "assets/hero-photos/broken_beach_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/broken_beach_02.jpg",
+    "size": [
+      900,
+      600
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Angel's Billabong",
+    "slug": "angel_billabong_01",
+    "url": "https://www.journeyera.com/wp-content/uploads/2018/03/angels-billabong-nusa-penida-05938.jpg",
+    "page": "https://www.journeyera.com/angels-billabong-nusa-penida-bali/",
+    "match": "JourneyEra Angel’s Billabong guide 封面，匹配岩石天然潮池。",
+    "note": "低潮才清楚；浪大不要靠边，不与 Tembeling 淡水池混淆。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2018/03/angels-billabong-nusa-penida-05938.jpg",
+    "relative": "assets/hero-photos/angel_billabong_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/angel_billabong_01.jpg",
+    "size": [
+      900,
+      600
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Angel's Billabong",
+    "slug": "angel_billabong_02",
+    "url": "https://www.journeyera.com/wp-content/uploads/2018/03/angels-billabong-nusa-penida-06009.jpg",
+    "page": "https://www.journeyera.com/angels-billabong-nusa-penida-bali/",
+    "match": "同页潮池图，显示透明岩池和海岸线。",
+    "note": "D6 上午快速拍潮池；低潮小浪才靠近，高潮或外海涌浪时只在上方看。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2018/03/angels-billabong-nusa-penida-06009.jpg",
+    "relative": "assets/hero-photos/angel_billabong_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/angel_billabong_02.jpg",
+    "size": [
+      600,
+      900
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Kelingking Beach",
+    "slug": "kelingking_01",
+    "url": "https://www.journeyera.com/wp-content/uploads/2017/03/kelingking-secret-point-beach-04119.jpg",
+    "page": "https://www.journeyera.com/kelingking-beach/",
+    "match": "JourneyEra Kelingking guide 封面，T-Rex 半岛轮廓明确。",
+    "note": "D6 主片。默认观景台和上段安全台阶；完整下到底部沙滩会取消 Paluang / Banah / 回拍日落。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2017/03/kelingking-secret-point-beach-04119.jpg",
+    "relative": "assets/hero-photos/kelingking_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/kelingking_01.jpg",
+    "size": [
+      900,
+      600
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Kelingking Beach",
+    "slug": "kelingking_02",
+    "url": "https://www.jonnymelon.com/wp-content/uploads/2022/11/nusa-penida-95-1440x960.jpg",
+    "page": "https://www.jonnymelon.com/kelingking-secret-point-beach/",
+    "match": "Jonny Melon Kelingking guide 图，匹配上方观景台海湾视角。",
+    "note": "早晚侧光更立体；中午容易高反差。",
+    "source_image": "https://www.jonnymelon.com/wp-content/uploads/2022/11/nusa-penida-95-1440x960.jpg",
+    "relative": "assets/hero-photos/kelingking_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/kelingking_02.jpg",
+    "size": [
+      1440,
+      960
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Diamond Beach",
+    "slug": "diamond_01",
+    "url": "https://www.journeyera.com/wp-content/uploads/2019/01/Diamond-Beach-Nusa-Penida-03299.jpg",
+    "page": "https://www.journeyera.com/diamond-beach-nusa-penida/",
+    "match": "JourneyEra Diamond Beach guide 封面，白崖楼梯和钻石岩柱语境明确。",
+    "note": "主拍上方和阶梯中段，不下切到沙滩。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2019/01/Diamond-Beach-Nusa-Penida-03299.jpg",
+    "relative": "assets/hero-photos/diamond_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/diamond_01.jpg",
+    "size": [
+      900,
+      600
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Diamond Beach",
+    "slug": "diamond_02",
+    "url": "https://www.journeyera.com/wp-content/uploads/2019/01/Diamond-Beach-Nusa-Penida-03325.jpg",
+    "page": "https://www.journeyera.com/diamond-beach-nusa-penida/",
+    "match": "同页楼梯构图，匹配 Diamond 的悬崖阶梯机位。",
+    "note": "用阶梯引导线 + 人物尺度，注意排队和安全。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2019/01/Diamond-Beach-Nusa-Penida-03325.jpg",
+    "relative": "assets/hero-photos/diamond_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/diamond_02.jpg",
+    "size": [
+      600,
+      900
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Atuh Beach",
+    "slug": "atuh_01",
+    "url": "https://www.journeyera.com/wp-content/uploads/2018/03/atuh-beach-nusa-penida-03947.jpg",
+    "page": "https://www.journeyera.com/atuh-beach-nusa-penida/",
+    "match": "JourneyEra Atuh Beach guide 封面，匹配宽弧形海湾和离岸岩。",
+    "note": "Atuh 与 Diamond 相邻但画面不同：Atuh 是弧形海湾，不是白崖楼梯。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2018/03/atuh-beach-nusa-penida-03947.jpg",
+    "relative": "assets/hero-photos/atuh_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/atuh_01.jpg",
+    "size": [
+      900,
+      600
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Atuh Beach",
+    "slug": "atuh_02",
+    "url": "https://www.journeyera.com/wp-content/uploads/2018/03/atuh-beach-nusa-penida-03942.jpg",
+    "page": "https://www.journeyera.com/atuh-beach-nusa-penida/",
+    "match": "同页高位俯拍图，匹配 Atuh 上方观景点。",
+    "note": "早上侧光拍浪线和岩柱，避免下沙滩消耗体力。",
+    "source_image": "https://www.journeyera.com/wp-content/uploads/2018/03/atuh-beach-nusa-penida-03942.jpg",
+    "relative": "assets/hero-photos/atuh_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/atuh_02.jpg",
+    "size": [
+      600,
+      900
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Rumah Pohon / Thousand Islands",
+    "slug": "rumah_pohon_01",
+    "url": "https://theworldtravelguy.com/wp-content/uploads/2018/12/DSCF2343.jpg",
+    "page": "https://theworldtravelguy.com/nusa-penida-treehouse-in-bali-rumah-pohon-molenteng/",
+    "match": "World Travel Guy Rumah Pohon Molenteng guide 封面，匹配树屋和东线岩柱。",
+    "note": "排队点，先拍环境，不要为了同款照卡太久。",
+    "source_image": "https://theworldtravelguy.com/wp-content/uploads/2018/12/DSCF2343.jpg",
+    "relative": "assets/hero-photos/rumah_pohon_01.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/rumah_pohon_01.jpg",
+    "size": [
+      1200,
+      800
+    ],
+    "status": "ok"
+  },
+  {
+    "spot": "Rumah Pohon / Thousand Islands",
+    "slug": "rumah_pohon_02",
+    "url": "https://wisatabalipenida.com/wp-content/uploads/2021/03/foto-di-rumah-pohon.jpg",
+    "page": "https://wisatabalipenida.com/en/nusa-penida-tree-house/",
+    "match": "Nusa Penida Tree House guide 中 sunrise/tree house 图，匹配 Rumah Pohon 东线日出/早光。",
+    "note": "若排队过长，转 Thousand Islands Viewpoint 拍岩柱群。",
+    "source_image": "https://wisatabalipenida.com/wp-content/uploads/2021/03/foto-di-rumah-pohon.jpg",
+    "relative": "assets/hero-photos/rumah_pohon_02.jpg",
+    "path": "/Users/gfengwang/work/ob/ob-workspace/Indonesia/assets/hero-photos/rumah_pohon_02.jpg",
+    "size": [
+      640,
+      480
+    ],
+    "status": "ok"
+  }
+]
