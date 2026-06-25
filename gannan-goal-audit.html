@@ -133,7 +133,7 @@
 <h1 class="title">甘南 + 莲宝叶则目标完成审计</h1>
 </header>
 <h1 id="甘南--莲宝叶则目标完成审计">甘南 + 莲宝叶则目标完成审计</h1>
-<p>生成时间：2026-06-25 22:25</p>
+<p>生成时间：2026-06-25 22:46</p>
 <p>这份审计从原始目标出发，只判断当前证据是否足以证明完成。它不会因为页面存在就把动态机票、酒店、门票价格判定为已完成。</p>
 <p>总体结论：未全部完成，订单级验证仍缺真实数据</p>
 <table>
@@ -175,5 +175,26 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="
 <p>当前如果没有 <code>data/gannan_order_inputs.json</code>、真实候选
 CSV、复核日志和证据截图，就只能判定为“攻略包和核验框架完成”，不能判定为“机票/酒店/门票已完成订单级验证”。</p>
 <script src="gannan-app.js"></script>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const blocks = document.querySelectorAll("pre.mermaid");
+  blocks.forEach((block, index) => {
+    const graph = document.createElement("div");
+    graph.className = "mermaid";
+    graph.textContent = block.textContent;
+    graph.setAttribute("data-mermaid-index", String(index));
+    block.replaceWith(graph);
+  });
+
+  if (blocks.length) {
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "strict",
+      theme: "default"
+    });
+    await mermaid.run({ querySelector: ".mermaid" });
+  }
+</script>
 </body>
 </html>

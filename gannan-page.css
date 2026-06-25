@@ -57,8 +57,16 @@ body > :first-child {
   margin-top: 0;
 }
 
-pre.mermaid {
-  white-space: pre;
+pre.mermaid,
+.mermaid {
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
 }
 
 .task-list li.is-checked {

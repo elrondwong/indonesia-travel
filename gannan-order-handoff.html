@@ -133,7 +133,7 @@
 <h1 class="title">甘南 + 莲宝叶则订单核验接力包</h1>
 </header>
 <h1 id="甘南--莲宝叶则订单核验接力包">甘南 + 莲宝叶则订单核验接力包</h1>
-<p>生成时间：2026-06-25 22:25</p>
+<p>生成时间：2026-06-25 22:46</p>
 <p>这份接力包只做一件事：把“攻略包完成”接到“真实订单反复验证”上。它不会把模板当成已验证订单，也不会把
 HTTP 可达当成价格或开放已确认。</p>
 <h2 id="当前接力状态">当前接力状态</h2>
@@ -300,5 +300,26 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="
 和 <code>python3 scripts/audit_gannan_goal_completion.py --strict</code>
 都通过，才能说机票、酒店、车辆、门票、机位开放和证据已经完成订单级验证。</p>
 <script src="gannan-app.js"></script>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const blocks = document.querySelectorAll("pre.mermaid");
+  blocks.forEach((block, index) => {
+    const graph = document.createElement("div");
+    graph.className = "mermaid";
+    graph.textContent = block.textContent;
+    graph.setAttribute("data-mermaid-index", String(index));
+    block.replaceWith(graph);
+  });
+
+  if (blocks.length) {
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "strict",
+      theme: "default"
+    });
+    await mermaid.run({ querySelector: ".mermaid" });
+  }
+</script>
 </body>
 </html>

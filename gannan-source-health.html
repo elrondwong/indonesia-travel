@@ -510,5 +510,26 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_source_health_report.py <span class="at">--check</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/check_gannan_sources.py <span class="at">--online</span></span></code></pre></div>
 <script src="gannan-app.js"></script>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const blocks = document.querySelectorAll("pre.mermaid");
+  blocks.forEach((block, index) => {
+    const graph = document.createElement("div");
+    graph.className = "mermaid";
+    graph.textContent = block.textContent;
+    graph.setAttribute("data-mermaid-index", String(index));
+    block.replaceWith(graph);
+  });
+
+  if (blocks.length) {
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "strict",
+      theme: "default"
+    });
+    await mermaid.run({ querySelector: ".mermaid" });
+  }
+</script>
 </body>
 </html>

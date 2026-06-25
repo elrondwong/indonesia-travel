@@ -293,5 +293,26 @@ type="checkbox" />无人机：实名、空域、现场禁飞牌示。</label></l
 type="checkbox" />天气和路况：T-3/T-1/当天早上截图。</label></li>
 </ul>
 <script src="gannan-app.js"></script>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const blocks = document.querySelectorAll("pre.mermaid");
+  blocks.forEach((block, index) => {
+    const graph = document.createElement("div");
+    graph.className = "mermaid";
+    graph.textContent = block.textContent;
+    graph.setAttribute("data-mermaid-index", String(index));
+    block.replaceWith(graph);
+  });
+
+  if (blocks.length) {
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "strict",
+      theme: "default"
+    });
+    await mermaid.run({ querySelector: ".mermaid" });
+  }
+</script>
 </body>
 </html>

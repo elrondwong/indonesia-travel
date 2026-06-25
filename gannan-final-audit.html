@@ -590,5 +590,26 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="
 <p>这套攻略已经满足“可执行攻略包”的要求：有路线、有机位、有摄影执行、有装备、有沟通话术、有门票/酒店/机票核验框架、有预算工作台、有路线图和网页入口。</p>
 <p>它还不能替代“实际日期的订单核验”：没有出发日期、人数和预算时，写死具体机票和酒店价格反而会误导。下一步只需要补齐出行信息，就能把候选航班、候选酒店、包车报价和门票预约逐项填进预算工作台。</p>
 <script src="gannan-app.js"></script>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const blocks = document.querySelectorAll("pre.mermaid");
+  blocks.forEach((block, index) => {
+    const graph = document.createElement("div");
+    graph.className = "mermaid";
+    graph.textContent = block.textContent;
+    graph.setAttribute("data-mermaid-index", String(index));
+    block.replaceWith(graph);
+  });
+
+  if (blocks.length) {
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "strict",
+      theme: "default"
+    });
+    await mermaid.run({ querySelector: ".mermaid" });
+  }
+</script>
 </body>
 </html>
