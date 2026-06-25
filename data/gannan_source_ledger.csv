@@ -1,0 +1,34 @@
+id,category,item,source_name,priority,url,verify_use,rounds,fallback,notes
+ticket_labrang_ctrip,ticket,拉卜楞寺,携程拉卜楞寺,A,https://you.ctrip.com/sight/xiahe2799/14115.html,核验门票/开放/用户点评中的近期变化,T-14|T-7|T-1,景区现场/酒店前台,OTA不是唯一权威
+ticket_labrang_eztravel,ticket,拉卜楞寺,EZ Travel 拉卜楞寺,B,https://vacation.eztravel.com.tw/sight/PLC0000078341,辅助核验景点基础信息,T-14|T-7,携程/酒店前台,仅作补充
+ticket_sangke_ctrip,ticket,桑科草原,携程桑科草原,B,https://you.ctrip.com/sight/xiahe2799/14116.html,核验经营区/骑马/停车等收费提示,T-7|T-1,酒店/司机当地确认,草原开放区和经营区要区分
+ticket_ganjia_ctrip,ticket,甘加秘境,携程甘加秘境,A,https://you.ctrip.com/sight/xiahe2799/5681108.html,核验票务组合/预约/观光车,T-14|T-7|T-1,甘南文旅/酒店前台,票务组合可能变化
+official_gannan_culture,ticket,甘南景区公告,甘南文旅,A,https://www.gn.gansu.gov.cn/,核验甘南州景区公告/文旅通知,T-7|T-3|T-1,酒店前台/司机当地消息,官方公告优先级高于游记
+ticket_milarepa_ctrip,ticket,米拉日巴佛阁,携程米拉日巴佛阁,B,https://you.ctrip.com/sight/hezuo2786/14117.html,核验门票/开放时间/内部限制,T-7|T-1,现场售票处,蓝调外观比入内更重要
+ticket_zhagana_ctrip,ticket,扎尕那,携程扎尕那,A,https://you.ctrip.com/sight/diebu2801/140717.html,核验门票/预约/近期评价,T-14|T-7|T-3|T-1,甘南文旅/酒店前台/景区电话,公开口径冲突必须多源确认
+ticket_zhagana_qunar,ticket,扎尕那,去哪儿扎尕那,A,https://piao.qunar.com/ticket/detail_335936.html,核验票价/组合/可预约日期,T-14|T-7|T-3|T-1,携程/官方/酒店前台,与携程交叉验证
+ticket_langmusi_ctrip,ticket,郎木寺,携程郎木寺,B,https://you.ctrip.com/sight/luqu2800/14123.html,核验开放/票价/近期评价,T-7|T-1,现场/酒店前台,甘肃侧和四川侧可能分别购票
+ticket_langmusi_qunar,ticket,郎木寺,去哪儿郎木寺,B,https://piao.qunar.com/ticket/detail_43315.html,核验票价和开放口径,T-7|T-1,携程/现场,辅助源
+ticket_flower_lake_ctrip,ticket,若尔盖花湖,携程若尔盖花湖,A,https://you.ctrip.com/sight/zoige3162/64619.html,核验门票/观光车/栈道开放,T-7|T-3|T-1,景区电话/司机当地确认,天气影响强
+ticket_flower_lake_qunar,ticket,若尔盖花湖,去哪儿若尔盖花湖,B,https://piao.qunar.com/ticket/detail_24984.html,核验票价/组合/预约,T-7|T-1,携程/现场,辅助源
+ticket_yellow_river_ctrip,ticket,黄河九曲第一湾,携程黄河九曲第一湾,A,https://you.ctrip.com/sight/zoige3162/64622.html,核验门票/扶梯组合/闭园,T-7|T-3|T-1,现场/司机当地确认,日落下撤时间比票价更关键
+ticket_yellow_river_qunar,ticket,黄河九曲第一湾,去哪儿黄河九曲第一湾,B,https://piao.qunar.com/ticket/detail_31873.html,核验票价/组合/预约,T-7|T-1,携程/现场,辅助源
+ticket_lianbao_ctrip,ticket,莲宝叶则,携程莲宝叶则,A,https://gs.ctrip.com/html5/you/sight/abacounty1446246/1684361.html,核验门票/可预约日期/近期评价,T-14|T-7|T-3|T-1|D-day,阿坝州文旅/酒店前台/景区电话,开放范围和交通规则比票价更关键
+official_aba_culture,ticket,阿坝州文旅,阿坝州文化广播电视体育和旅游局公示公告,A,https://abazhou.gov.cn/abazhou/c109755/bmxxgk_list_16.shtml,核验阿坝州景区公告/莲宝叶则相关通知,T-7|T-3|T-1|D-day,阿坝县酒店/司机当地消息,官方公告优先级高
+flight_lanzhou_airport,flight,兰州中川机场,兰州中川国际机场,A,https://www.lzairport.com/,核验机场交通/航班服务/机场公告,T-14|T-7|T-3,航司App/航旅纵横/12306,不能替代实际航班价格
+hotel_xiahe_agoda,hotel,夏河住宿,Agoda 夏河住宿页,B,https://www.agoda.com/zh-tw/xiahe/maps/gannan-cn.html,核验夏河住宿供给和价格浮动,T-14|T-7,携程/飞猪/酒店电话,最终以实际日期下单页为准
+budget_klook_gannan,budget,甘南成团价格锚点,Klook 甘南9日产品,B,https://www.klook.com/zh-CN/activity/113381-gannan/,辅助判断9日成团产品价格区间,T-14|T-7,其他旅行社/包车报价,不是摄影包车成交价
+budget_toursforfun_gannan,budget,甘南短线价格锚点,ToursForFun 甘南6日产品,C,https://cn.toursforfun.com/trip/vacation-packages-105280620.html,辅助判断短线产品价格区间,T-14|T-7,Klook/本地旅行社,美元价格和日期浮动大
+weather_china,weather,天气,中国天气,A,https://www.weather.com.cn/,核验甘南/若尔盖/阿坝天气,T-7|T-3|T-1|D-day,中央气象台/司机当地消息,山区实况优先
+weather_cma,weather,天气,中央气象台,A,https://weather.cma.cn/,核验天气预警/趋势,T-7|T-3|T-1|D-day,中国天气/司机当地消息,关注雷雨/大风/降雪
+health_cdc_altitude,health,高海拔旅行健康,CDC High Elevation Travel,A,https://wwwnc.cdc.gov/travel/page/travel-to-high-altitudes,核验高海拔旅行健康通用原则,T-14|T-7,出发前咨询医生/旅行医学门诊,不替代医生诊断
+health_cdc_yellowbook,health,高海拔疾病资料,CDC Yellow Book High-Altitude Travel,A,https://wwwnc.cdc.gov/travel/yellowbook/2024/environmental-hazards-risks/high-altitude-travel-and-altitude-illness,核验高海拔疾病预防和应对原则,T-14|T-7,出发前咨询医生/旅行医学门诊,不替代医生诊断
+sun_lanzhou,photo,兰州日出日落,Timeanddate Lanzhou,B,https://www.timeanddate.com/sun/china/lanzhou,核验兰州及周边天文时间,T-7|T-3,天气App/摄影App,山体遮挡需加余量
+sun_aba,photo,阿坝日出日落,Timeanddate Aba,B,https://www.timeanddate.com/sun/,核验阿坝/莲宝叶则天文时间,T-7|T-3|T-1,天气App/摄影App,实际见光受山体遮挡
+drone_uom,drone,无人机合规,民用无人驾驶航空器综合管理平台,A,https://uom.caac.gov.cn/,核验实名登记/空域合规入口,T-14|T-7,现场禁飞牌/景区工作人员,现场禁飞优先级最高
+map_lanzhou_xiahe,route,兰州到夏河,Google Maps方向,B,https://www.google.com/maps/dir/?api=1&origin=Lanzhou&destination=Xiahe+County+Gansu&travelmode=driving,辅助核验路线关系和耗时,T-7|T-3|T-1,高德/百度/司机,国内导航以高德百度更准
+map_hezuo_zhagana,route,合作到扎尕那,Google Maps方向,B,https://www.google.com/maps/dir/?api=1&origin=Hezuo+Gansu&destination=Zhagana+Diebu&travelmode=driving,辅助核验路线关系和耗时,T-7|T-3|T-1,高德/百度/司机,施工和天气影响大
+map_tangke_aba,route,唐克到阿坝县,Google Maps方向,B,https://www.google.com/maps/dir/?api=1&origin=Tangke+Zoige&destination=Aba+County+Sichuan&travelmode=driving,辅助核验路线关系和耗时,T-7|T-3|T-1,高德/百度/司机,高原天气和牲畜上路影响大
+map_aba_lianbao,route,阿坝县到莲宝叶则,Google Maps方向,B,https://www.google.com/maps/dir/?api=1&origin=Aba+County+Sichuan&destination=Lianbao+Yeze&travelmode=driving,辅助核验路线关系和耗时,T-7|T-3|T-1|D-day,高德/百度/酒店前台/司机,景区交通规则当天确认
+map_amap_search,route,高德地图搜索,高德地图,A,https://www.amap.com/search?query=拉卜楞寺,现场导航和中文地名搜索,T-7|T-3|T-1|D-day,百度地图/司机定位/酒店定位,国内现场优先级高于Google Maps
+map_baidu_search,route,百度地图搜索,百度地图,A,https://map.baidu.com/search/拉卜楞寺,现场导航和中文地名搜索,T-7|T-3|T-1|D-day,高德地图/司机定位/酒店定位,用于交叉验证中文地名

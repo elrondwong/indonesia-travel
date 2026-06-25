@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>甘南 + 莲宝叶则摄影攻略总控台</title>
+  <meta name="description" content="兰州出发甘南与莲宝叶则摄影攻略总控台，集中入口、执行状态、订单核验和出发前复核。">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .dashboard {
+      display: grid;
+      gap: 22px;
+      width: min(1280px, calc(100% - 32px));
+      margin: 28px auto 56px;
+    }
+    .hero-panel {
+      padding: 34px 38px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .hero-panel h1 {
+      margin: 0 0 12px;
+      padding: 0;
+      border: 0;
+    }
+    .hero-panel p {
+      max-width: 980px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .status-grid,
+    .link-grid,
+    .audit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .module-card,
+    .status-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .module-card h3,
+    .status-card h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    .module-card p,
+    .status-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .module-card a {
+      display: inline-flex;
+      margin-top: 8px;
+      color: var(--blue);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: #edf7f1;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .badge.warn {
+      background: #fff8eb;
+      color: var(--amber);
+    }
+    .wide-card {
+      padding: 24px 28px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .route-image {
+      display: block;
+      width: 100%;
+      margin: 12px 0 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+    @media (max-width: 980px) {
+      .status-grid,
+      .link-grid,
+      .audit-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-panel {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-main">
+      <p class="eyebrow">Gannan Photo Route Guide</p>
+      <h1>甘南 + 莲宝叶则摄影攻略总控台</h1>
+    </div>
+    <div class="topbar-actions">
+      <a href="gannan.html">主攻略</a>
+      <a href="gannan-photo-handbook.html">摄影手册</a>
+      <a href="gannan-light-astro.html">光线天象</a>
+      <a href="gannan-shot-list.html">出片清单</a>
+      <a href="gannan-photo-readiness.html">出片闸门</a>
+      <a href="gannan-mobile-pack.html">移动速查</a>
+      <a href="gannan-daily-cards.html">每日卡</a>
+      <a href="gannan-photo-map.html">机位地图</a>
+      <a href="gannan-photo-spot-check.html">机位核验</a>
+      <a href="gannan-china-map-pack.html">国内导航</a>
+      <a href="gannan-source-ledger.html">来源台账</a>
+      <a href="gannan-source-health.html">来源健康</a>
+      <a href="gannan-source-fallbacks.html">故障处理</a>
+      <a href="gannan-evidence-archive.html">证据归档</a>
+      <a href="gannan-quote-templates.html">询价消息</a>
+      <a href="gannan-input-wizard.html">填写信息</a>
+      <a href="gannan-order-workbench.html">预算订单</a>
+      <a href="gannan-order-handoff.html">订单接力</a>
+      <a href="gannan-order-start.html">订单启动</a>
+      <a href="gannan-order-candidates.html">订单候选</a>
+      <a href="gannan-candidate-scorecard.html">候选评分</a>
+      <a href="gannan-order-coverage.html">覆盖闸门</a>
+      <a href="gannan-order-report.html">复核报告</a>
+      <a href="gannan-booking-gate.html">下单闸门</a>
+      <a href="gannan-goal-audit.html">目标审计</a>
+      <a href="gannan-reverification-sop.html">反复复核</a>
+      <a href="gannan-reverification-schedule.html">复核日程</a>
+      <a href="gannan-reverification-calendar.html">复核日历</a>
+      <a href="gannan-reverification-diff.html">差异追踪</a>
+      <a href="gannan-contingency-plan.html">应急预案</a>
+      <a href="gannan-final-audit.html">最终核验</a>
+      <a href="index.html">印尼攻略</a>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="hero-panel">
+      <h1>兰州出发甘南 + 莲宝叶则摄影攻略</h1>
+      <p>9 天 8 晚推荐路线，核心是扎尕那全天和莲宝叶则全天。当前已经形成可执行攻略包；机票、酒店、包车/租车成交价仍需等具体出发日期、人数、预算和出发城市后做订单级核验。</p>
+      <div class="status-grid">
+        <div class="status-card">
+          <span class="badge">已完成</span>
+          <h3>路线和执行节奏</h3>
+          <p>兰州进出，夏河、甘加、合作、扎尕那、郎木寺、若尔盖、唐克、阿坝县、莲宝叶则。</p>
+        </div>
+        <div class="status-card">
+          <span class="badge">已完成</span>
+          <h3>拍大片体系</h3>
+          <p>按 S/A/B 优先级拆出扎尕那晨雾、莲宝叶则湖泊石山、黄河九曲日落等主片。</p>
+        </div>
+        <div class="status-card">
+          <span class="badge warn">待日期</span>
+          <h3>订单级核验</h3>
+          <p>实际航班、酒店、车辆报价和景区当日开放，需要日期和人数后复核。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wide-card">
+      <h2>路线总览</h2>
+      <img class="route-image" src="assets/route/gannan_route_overview.svg" alt="兰州出发甘南与莲宝叶则摄影路线总览">
+    </section>
+
+    <section class="wide-card">
+      <h2>打开哪个页面</h2>
+      <div class="link-grid">
+        <div class="module-card">
+          <h3>主攻略</h3>
+          <p>每天几点去哪、住哪里、车程边界、8/9 天路线。</p>
+          <a href="gannan.html">打开主攻略</a>
+        </div>
+        <div class="module-card">
+          <h3>摄影手册</h3>
+          <p>机位、光线、焦段、参数、放弃条件和天气失败替代拍法。</p>
+          <a href="gannan-photo-handbook.html">打开摄影手册</a>
+        </div>
+        <div class="module-card">
+          <h3>光线天象规划</h3>
+          <p>日出、日落、黄金时段、蓝调和星空可行性，含离线计算脚本。</p>
+          <a href="gannan-light-astro.html">打开光线规划</a>
+        </div>
+        <div class="module-card">
+          <h3>大片交付清单</h3>
+          <p>每天必须带回的封面图、故事图、短视频、失败天气替代素材。</p>
+          <a href="gannan-shot-list.html">打开出片清单</a>
+        </div>
+        <div class="module-card">
+          <h3>出片准备闸门</h3>
+          <p>合并 S 级机位、光线工具、每日卡、装备、天气开放和证据，判断能不能保核心大片。</p>
+          <a href="gannan-photo-readiness.html">打开出片闸门</a>
+        </div>
+        <div class="module-card">
+          <h3>移动端离线速查包</h3>
+          <p>现场手机版驾驶舱：每日硬截止、主机位、应急红线和常用话术。</p>
+          <a href="gannan-mobile-pack.html">打开移动速查</a>
+        </div>
+        <div class="module-card">
+          <h3>每日执行卡</h3>
+          <p>手机现场版：每天只看目标、硬截止、主机位和砍点顺序。</p>
+          <a href="gannan-daily-cards.html">打开每日卡</a>
+        </div>
+        <div class="module-card">
+          <h3>机位地图索引</h3>
+          <p>每个机位的地图入口、搜索关键词、黄金时间和主力镜头。</p>
+          <a href="gannan-photo-map.html">打开机位地图</a>
+        </div>
+        <div class="module-card">
+          <h3>机位核验表</h3>
+          <p>S/A/B 级机位的地图关键词、黄金时间、必带回画面和放弃条件。</p>
+          <a href="gannan-photo-spot-check.html">打开机位核验</a>
+        </div>
+        <div class="module-card">
+          <h3>国内地图导航包</h3>
+          <p>高德/百度搜索入口、每日导航顺序、司机定位确认和离线截图清单。</p>
+          <a href="gannan-china-map-pack.html">打开国内导航</a>
+        </div>
+        <div class="module-card">
+          <h3>来源台账</h3>
+          <p>机票、酒店、门票、地图、天气、无人机和预算锚点的复核入口。</p>
+          <a href="gannan-source-ledger.html">打开来源台账</a>
+        </div>
+        <div class="module-card">
+          <h3>来源健康报告</h3>
+          <p>按分类、优先级和复核轮次检查来源覆盖，联网探测结果单独汇总。</p>
+          <a href="gannan-source-health.html">打开来源健康</a>
+        </div>
+        <div class="module-card">
+          <h3>来源故障处理</h3>
+          <p>外链超时、403 或只能人工打开时，按优先级给出备选入口和下单阻塞口径。</p>
+          <a href="gannan-source-fallbacks.html">打开故障处理</a>
+        </div>
+        <div class="module-card">
+          <h3>证据归档规范</h3>
+          <p>每轮复核截图、聊天确认、现场牌示和订单证据的存放与命名规则。</p>
+          <a href="gannan-evidence-archive.html">打开证据归档</a>
+        </div>
+        <div class="module-card">
+          <h3>预算与订单</h3>
+          <p>机票/高铁、包车/租车、酒店、门票、预算警戒线和四次复核。</p>
+          <a href="gannan-order-workbench.html">打开预算工作台</a>
+        </div>
+        <div class="module-card">
+          <h3>订单核验接力包</h3>
+          <p>把需要补的信息、真实候选最低覆盖、证据归档和严格检查命令集中到一页。</p>
+          <a href="gannan-order-handoff.html">打开订单接力</a>
+        </div>
+        <div class="module-card">
+          <h3>出行信息填写器</h3>
+          <p>把出发城市、日期、人数、预算、交通偏好生成成订单级核验 JSON。</p>
+          <a href="gannan-input-wizard.html">打开填写器</a>
+        </div>
+        <div class="module-card">
+          <h3>订单启动工作流</h3>
+          <p>把日期、人数和预算推进成真实候选表、证据目录和复核日志。</p>
+          <a href="gannan-order-start.html">打开订单启动</a>
+        </div>
+        <div class="module-card">
+          <h3>订单候选模板</h3>
+          <p>机票/高铁、住宿、车辆和门票候选 CSV，可自动检查漏项。</p>
+          <a href="gannan-order-candidates.html">打开候选模板</a>
+        </div>
+        <div class="module-card">
+          <h3>候选评分卡</h3>
+          <p>按价格、证据、退改、酒店确认、车辆夜路和门票开放范围给候选排序。</p>
+          <a href="gannan-candidate-scorecard.html">打开候选评分</a>
+        </div>
+        <div class="module-card">
+          <h3>订单覆盖率闸门</h3>
+          <p>检查去返程、D1-D8 酒店、车辆和核心门票是否完整覆盖。</p>
+          <a href="gannan-order-coverage.html">打开覆盖闸门</a>
+        </div>
+        <div class="module-card">
+          <h3>订单复核报告</h3>
+          <p>把真实候选 CSV、输入 JSON 和复核日志汇总成下单前红旗清单。</p>
+          <a href="gannan-order-report.html">打开复核报告</a>
+        </div>
+        <div class="module-card">
+          <h3>下单决策闸门</h3>
+          <p>合并出行信息、候选评分、覆盖、证据、日志和来源故障，判断能不能下单。</p>
+          <a href="gannan-booking-gate.html">打开下单闸门</a>
+        </div>
+        <div class="module-card">
+          <h3>目标完成审计</h3>
+          <p>从原始目标反查当前证据，明确哪些已完成、哪些仍缺真实订单数据。</p>
+          <a href="gannan-goal-audit.html">打开目标审计</a>
+        </div>
+        <div class="module-card">
+          <h3>询价消息包</h3>
+          <p>可直接发给包车、租车、酒店、民宿和景区的询价模板。</p>
+          <a href="gannan-quote-templates.html">打开询价消息</a>
+        </div>
+        <div class="module-card">
+          <h3>反复核验 SOP</h3>
+          <p>T-14、T-7、T-3、T-1 和当天早上的证据、日志和改线规则。</p>
+          <a href="gannan-reverification-sop.html">打开复核 SOP</a>
+        </div>
+        <div class="module-card">
+          <h3>复核日程生成</h3>
+          <p>输入兰州出发日期，生成 T-14/T-7/T-3/T-1 和每天早上的复核任务。</p>
+          <a href="gannan-reverification-schedule.html">打开复核日程</a>
+        </div>
+        <div class="module-card">
+          <h3>复核日历导出</h3>
+          <p>把反复验证任务导出为 ICS 日历提醒，导入手机或电脑日历执行。</p>
+          <a href="gannan-reverification-calendar.html">打开复核日历</a>
+        </div>
+        <div class="module-card">
+          <h3>复核差异追踪</h3>
+          <p>比较多轮复核记录，抓涨价、状态变坏、blocked/fail 和缺下一步。</p>
+          <a href="gannan-reverification-diff.html">打开差异追踪</a>
+        </div>
+        <div class="module-card">
+          <h3>高原天气应急预案</h3>
+          <p>高反、雷雨、封路、闭园、车辆故障和返程压力的改线红线。</p>
+          <a href="gannan-contingency-plan.html">打开应急预案</a>
+        </div>
+        <div class="module-card">
+          <h3>装备 Checklist</h3>
+          <p>出发前打包、每日随身、高原保暖、防晒、防雨、数据备份。</p>
+          <a href="gannan-gear-checklist.html">打开装备清单</a>
+        </div>
+        <div class="module-card">
+          <h3>沟通 Checklist</h3>
+          <p>给司机、酒店、民宿、景区售票处的可复制话术。</p>
+          <a href="gannan-communication-checklist.html">打开沟通清单</a>
+        </div>
+        <div class="module-card">
+          <h3>核验记录</h3>
+          <p>门票、开放、酒店、交通、无人机、动态冲突项来源记录。</p>
+          <a href="gannan-verification.html">打开核验记录</a>
+        </div>
+        <div class="module-card">
+          <h3>最终核验矩阵</h3>
+          <p>哪些已完成，哪些必须等日期后复核，一眼看清。</p>
+          <a href="gannan-final-audit.html">打开最终核验</a>
+        </div>
+        <div class="module-card">
+          <h3>Markdown 源文件</h3>
+          <p>所有正文都有 Markdown 版本，便于继续编辑和打印。</p>
+          <a href="甘南莲宝叶则_完整攻略.md">打开 Markdown 主攻略</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wide-card">
+      <h2>订单级核验还缺什么</h2>
+      <div class="audit-grid">
+        <div class="status-card">
+          <h3>出行信息</h3>
+          <p>出发城市、出发日期、返程日期、人数、房间数、酒店预算。可先用填写器生成 JSON。</p>
+        </div>
+        <div class="status-card">
+          <h3>交通偏好</h3>
+          <p>是否自驾、是否包车、车型要求、能否接受异地还车或成都出。</p>
+        </div>
+        <div class="status-card">
+          <h3>摄影装备和身体状态</h3>
+          <p>是否带无人机、主要器材、是否有高原反应史、日均车程接受度。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

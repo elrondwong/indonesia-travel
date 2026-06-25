@@ -1,0 +1,16 @@
+spot_id,day,priority,area,spot_name,search_keyword,map_url,golden_window,primary_lens,required_output,verification_sources,access_risk,abort_condition,status,notes
+labrang_corridor,D1,A,夏河,拉卜楞寺转经长廊,夏河 拉卜楞寺 转经长廊,https://www.google.com/maps/search/?api=1&query=Labrang+Monastery+Xiahe,下午侧光或清晨,70-200mm,转经人物节奏/手部细节/长廊透视,寺院现场/酒店前台/司机,法会或内部殿堂限制,法会/管理提醒/信众抗拒,planned,尊重转经方向
+gongtang_pagoda,D1,A,夏河,贡唐宝塔/寺院外侧高点,夏河 贡唐宝塔,https://www.google.com/maps/search/?api=1&query=Gongtang+Pagoda+Xiahe,日落前到蓝调,70-200mm,寺院金顶/白墙/远山压缩,寺院现场/酒店前台,平台拥挤或风雨,风雨/平台拥挤/管理提醒,planned,蓝调补环境图
+sangke_grassland,D1,B,夏河,桑科草原,夏河 桑科草原,https://www.google.com/maps/search/?api=1&query=Sangke+Grassland+Xiahe,日落前1-2小时,24-105mm|70-200mm,草线/云影/牛羊马/公路弯道,高德/百度/司机,经营区边界和马匹安全,雷雨/草地泥泞/经营区限制,planned,不踩私人草场
+bajiao_city,D2,A,夏河/甘加,八角城,夏河 八角城,https://www.google.com/maps/search/?api=1&query=Bajiao+Ancient+City+Xiahe,上午云影,24-105mm,城墙几何/村落/草原远山,高德/百度/景区现场,停车点和无人机限制,停车危险/无人机禁飞/风大,planned,航拍需现场合规
+baishiya,D2,A,夏河/甘加,白石崖,甘加 白石崖,https://www.google.com/maps/search/?api=1&query=Baishiya+Xiahe,上午云影或下午侧光,70-200mm,白崖/草原/牛羊或人车尺度,高德/百度/司机/景区现场,路边停车安全,白墙天/停车不安全/无层次,planned,长焦压缩尺度
+milarepa_blue,D2,B,合作,米拉日巴佛阁蓝调,合作 米拉日巴佛阁,https://www.google.com/maps/search/?api=1&query=Milarepa+Buddha+Pavilion+Hezuo,日落后20-40分钟,24-105mm|14-24mm,佛阁立面/蓝调天空/广场人物尺度,现场管理/酒店前台,三脚架挡路或内部限制,雨大/内部限制/三脚架挡路,planned,外观蓝调优先
+zhagana_dari,D3-D4,S,扎尕那,达日观景台,扎尕那 达日观景台,https://www.google.com/maps/search/?api=1&query=Zhagana+Dari+Viewpoint,日出/日落,70-200mm,晨雾石城/村寨层次/云缝光束,酒店前台/司机/景区现场,山路湿滑和夜间换点,雷雨/路滑/浓雾无开窗/高反,planned,抵达后只选一个日落点
+zhagana_yeri,D3-D4,S,扎尕那,业日村附近,扎尕那 业日村,https://www.google.com/maps/search/?api=1&query=Zhagana+Yeri+Village,清晨或傍晚,70-200mm,石峰/村寨/炊烟/农田,酒店前台/司机/村口现场,私人区域和停车困难,私人区域/停车困难/天黑换点,planned,公共道路或观景点拍摄
+zhagana_fairy,D4,A,扎尕那,仙女滩/栈道,扎尕那 仙女滩,https://www.google.com/maps/search/?api=1&query=Zhagana+Fairy+Beach,上午或下午侧光,14-24mm|24-105mm,草坡/石峰/人物环境/栈道曲线,景区现场/酒店前台,雨后泥滑和栈道关闭,雨后泥滑/栈道拥挤/管理限制,planned,人物不挡山
+langmusi_red_cliff,D5,B,郎木寺,郎木寺/红石崖,郎木寺 红石崖,https://www.google.com/maps/search/?api=1&query=Langmusi+Town,上午轻拍,24-105mm|70-200mm,寺院外观/红石崖/人物背影,现场管理/司机,内部拍摄限制和时间压缩,内部限制/赶不上黄河日落,planned,只做轻拍
+flower_lake,D5,B,若尔盖,若尔盖花湖,若尔盖 花湖,https://www.google.com/maps/search/?api=1&query=Ruoergai+Flower+Lake,下午云影,70-200mm,湿地/水面/鸟/栈道/云影,景区公告/售票处/司机,观光车和栈道开放,强风冷雨/观光车停运/栈道关闭,planned,不要影响黄河日落
+yellow_river_bend,D5,A,唐克,黄河九曲第一湾,唐克 黄河九曲第一湾,https://www.google.com/maps/search/?api=1&query=First+Bend+of+Yellow+River+Tangke,日落前60-90分钟,70-200mm,河曲/金色水面/栈道剪影/蓝调,景区公告/售票处/司机,高位关闭和日落后下撤,17:00后仍未到唐克/雷雨/高位关闭,planned,黄河日落优先
+lianbao_zhagaer_lake,D7,S,莲宝叶则,扎尕尔措/湖泊倒影,莲宝叶则 扎尕尔措,https://www.google.com/maps/search/?api=1&query=Lianbao+Yeze+Zhagaer+Lake,上午风小或傍晚,24-105mm|70-200mm,石山湖泊/倒影/湖岸线/人物尺度,阿坝县酒店/景区/司机,高海拔/湖岸湿滑/支线开放,高反/湖岸湿滑/支线关闭/雷雨,planned,先拍安全环境图
+lianbao_tele_compression,D7,S,莲宝叶则,石山长焦压缩,莲宝叶则 石山 湖泊,https://www.google.com/maps/search/?api=1&query=Lianbao+Yeze+Scenic+Area,上午侧光或下午云影,70-200mm,尖峰/湖岸/人物或车辆尺度,阿坝县酒店/景区/司机,停车点和风大站立安全,风太大/无安全停车点/身体不适,planned,人物远离危险湖岸
+lianbao_high_view,D7,A,莲宝叶则,高位观景台/4520方向,莲宝叶则 4520 观景台,https://www.google.com/maps/search/?api=1&query=Lianbao+Yeze+Scenic+Area,下午云影或蓝调,24-105mm|70-200mm,高位湖泊石山/云影/蓝调,阿坝县酒店/景区/司机,闭园时间和高反,雷雨/闭园/高反/天黑撤离困难,planned,服从闭园时间
