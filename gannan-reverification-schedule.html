@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>甘南 + 莲宝叶则复核日程生成</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gannan-page.css" />
+</head>
+<body>
+<header class="gannan-topbar">
+  <div class="gannan-topbar-main">
+    <p class="eyebrow">Gannan Photo Route Guide</p>
+    <strong>甘南 + 莲宝叶则摄影攻略</strong>
+  </div>
+  <nav class="gannan-topbar-actions" aria-label="甘南攻略导航">
+    <a href="gannan-dashboard.html">总控台</a>
+    <a href="gannan.html">主攻略</a>
+    <a href="gannan-daily-cards.html">每日卡</a>
+    <a href="gannan-mobile-pack.html">速查</a>
+    <a href="gannan-photo-handbook.html">摄影</a>
+    <a href="gannan-light-astro.html">光线</a>
+    <a href="gannan-shot-list.html">出片</a>
+    <a href="gannan-photo-readiness.html">出片闸门</a>
+    <a href="gannan-photo-map.html">机位</a>
+    <a href="gannan-photo-spot-check.html">机位核验</a>
+    <a href="gannan-china-map-pack.html">导航</a>
+    <a href="gannan-source-ledger.html">来源</a>
+    <a href="gannan-source-health.html">来源健康</a>
+    <a href="gannan-source-fallbacks.html">故障处理</a>
+    <a href="gannan-evidence-archive.html">证据</a>
+    <a href="gannan-quote-templates.html">询价</a>
+    <a href="gannan-order-workbench.html">预算</a>
+    <a href="gannan-order-handoff.html">接力</a>
+    <a href="gannan-order-start.html">启动</a>
+    <a href="gannan-order-candidates.html">候选</a>
+    <a href="gannan-candidate-scorecard.html">评分</a>
+    <a href="gannan-order-coverage.html">覆盖</a>
+    <a href="gannan-order-report.html">报告</a>
+    <a href="gannan-booking-gate.html">下单</a>
+    <a href="gannan-goal-audit.html">目标审计</a>
+    <a href="gannan-reverification-sop.html">复核</a>
+    <a href="gannan-reverification-schedule.html">日程</a>
+    <a href="gannan-reverification-calendar.html">日历</a>
+    <a href="gannan-reverification-diff.html">差异</a>
+    <a href="gannan-contingency-plan.html">应急</a>
+    <a href="gannan-final-audit.html">核验</a>
+  </nav>
+</header>
+<header id="title-block-header">
+<h1 class="title">甘南 + 莲宝叶则复核日程生成</h1>
+</header>
+<h1 id="甘南--莲宝叶则复核日程生成">甘南 + 莲宝叶则复核日程生成</h1>
+<p>更新日期：2026-06-25<br />
+对应 SOP：<a
+href="甘南莲宝叶则_反复核验SOP.md">甘南莲宝叶则_反复核验SOP.md</a><br />
+复核日志模板：<a
+href="data/gannan_reverification_log.template.csv">data/gannan_reverification_log.template.csv</a><br />
+复核日历导出：<a
+href="甘南莲宝叶则_复核日历导出.md">甘南莲宝叶则_复核日历导出.md</a></p>
+<p>这份文件把“反复验证”变成按日期执行的日程。只要确定兰州出发走甘南主线的
+D1 日期，就能生成 T-14、T-7、T-3、T-1 和 D-day 每天早上的复核任务。</p>
+<h2 id="先看结论">先看结论</h2>
+<p>生成 Markdown 给人看：</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_reverification_schedule.py <span class="at">--route-start-date</span> 2026-09-12</span></code></pre></div>
+<p>生成 CSV 作为真实复核日志草稿：</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_reverification_schedule.py <span class="dt">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--route-start-date</span> 2026-09-12 <span class="dt">\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--format</span> csv <span class="dt">\</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--output</span> data/gannan_reverification_log.csv</span></code></pre></div>
+<p>然后检查日志格式：</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/check_gannan_reverification_log.py data/gannan_reverification_log.csv</span></code></pre></div>
+<p>生成手机/电脑日历提醒：</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_reverification_calendar.py <span class="at">--route-start-date</span> YYYY-MM-DD</span></code></pre></div>
+<h2 id="日期口径">日期口径</h2>
+<p><code>--route-start-date</code> 指兰州正式出发去甘南的 D1 日期。</p>
+<ul>
+<li>如果前一晚已经到兰州，D1 就是“兰州 -&gt; 夏河”的日期。</li>
+<li>如果当天从外地飞到兰州并立刻出发，D1
+仍然是兰州出发日期，但要额外确认航班不压缩 D1。</li>
+<li>如果先安排 D0 兰州适应/取车，D1 应填第二天。</li>
+</ul>
+<h2 id="生成内容">生成内容</h2>
+<table>
+<thead>
+<tr class="header">
+<th>轮次</th>
+<th>生成内容</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T-14</td>
+<td>大交通、车辆、核心酒店、门票初查、预算</td>
+<td>建立候选池</td>
+</tr>
+<tr class="even">
+<td>T-7</td>
+<td>交通短名单、车辆定稿、酒店电话确认、核心景区预约</td>
+<td>第一次收敛</td>
+</tr>
+<tr class="odd">
+<td>T-3</td>
+<td>天气、道路、莲宝叶则开放、机位光线、无人机、高原健康</td>
+<td>风险复核</td>
+</tr>
+<tr class="even">
+<td>T-1</td>
+<td>次日路线、门票开放、主机位、酒店、身体和装备</td>
+<td>执行复核</td>
+</tr>
+<tr class="odd">
+<td>D-day</td>
+<td>每天路线、门票、机位、身体状态</td>
+<td>现场调整</td>
+</tr>
+</tbody>
+</table>
+<h2 id="csv-怎么用">CSV 怎么用</h2>
+<p>生成的 CSV 与复核日志模板同列：</p>
+<pre class="text"><code>round,check_date,category,item,source,source_url_or_contact,quoted_price_cny,evidence_file,status,decision,next_action,owner,next_check_date,notes</code></pre>
+<p>默认状态是
+<code>n/a</code>，意思是“这是一条待执行任务，还不是复核结论”。实际查完后，把每行改成：</p>
+<ul>
+<li><code>pass</code>：本轮证据足够。</li>
+<li><code>watch</code>：可执行但有波动。</li>
+<li><code>fail</code>：淘汰或改线。</li>
+<li><code>blocked</code>：缺用户输入或外部回复。</li>
+</ul>
+<p>同时补齐：</p>
+<ul>
+<li><code>quoted_price_cny</code></li>
+<li><code>evidence_file</code></li>
+<li><code>decision</code></li>
+<li><code>next_action</code></li>
+<li><code>next_check_date</code></li>
+<li><code>notes</code></li>
+</ul>
+<h2 id="和其他工具的关系">和其他工具的关系</h2>
+<table>
+<thead>
+<tr class="header">
+<th>工具</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>scripts/gannan_reverification_schedule.py</code></td>
+<td>按日期生成要查什么</td>
+</tr>
+<tr class="even">
+<td><code>scripts/gannan_reverification_calendar.py</code></td>
+<td>把复核任务导出为可导入日历的 ICS</td>
+</tr>
+<tr class="odd">
+<td><code>scripts/check_gannan_reverification_log.py</code></td>
+<td>检查日志字段和状态是否合法</td>
+</tr>
+<tr class="even">
+<td><code>scripts/check_gannan_evidence.py --strict</code></td>
+<td>检查日志里的证据截图是否真实存在</td>
+</tr>
+<tr class="odd">
+<td><code>scripts/gannan_order_report.py</code></td>
+<td>把候选、日志和红旗汇总成可读报告</td>
+</tr>
+<tr class="even">
+<td><code>scripts/run_gannan_checks.py --actual</code></td>
+<td>真实订单阶段一键总核验</td>
+</tr>
+</tbody>
+</table>
+<h2 id="自检命令">自检命令</h2>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_reverification_schedule.py <span class="at">--check</span></span></code></pre></div>
+<script src="gannan-app.js"></script>
+</body>
+</html>

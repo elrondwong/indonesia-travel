@@ -1,0 +1,39 @@
+{
+  "trip": {
+    "origin_city": "",
+    "arrival_city": "兰州",
+    "departure_date": "",
+    "return_date": "",
+    "travelers": null,
+    "rooms": null,
+    "room_type": "",
+    "route_version": "9天8晚",
+    "transport_preference": "",
+    "hotel_budget_per_room_night": null,
+    "total_budget": null
+  },
+  "preferences": {
+    "accept_charter": true,
+    "accept_self_drive": true,
+    "accept_chengdu_exit": false,
+    "must_have_scenic_guesthouse": false,
+    "bring_drone": false,
+    "camera_gear": "",
+    "max_daily_drive_hours": null,
+    "altitude_sickness_history": "",
+    "pace": "摄影优先，不赶夜路"
+  },
+  "constraints": {
+    "earliest_departure_time": "",
+    "latest_return_arrival_time": "",
+    "luggage_needs": "",
+    "flight_refund_preference": "",
+    "hotel_cancellation_preference": "优先可取消",
+    "diet_or_health_notes": ""
+  },
+  "contacts": {
+    "primary_contact": "",
+    "phone": "",
+    "emergency_contact": ""
+  }
+}

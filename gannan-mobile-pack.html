@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>甘南 + 莲宝叶则移动端离线速查包</title>
+  <meta name="description" content="甘南与莲宝叶则摄影行程的手机离线速查页，集中每日执行、硬截止、主机位、应急红线和复核入口。">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: #f6f8fb;
+    }
+    .mobile-shell {
+      display: grid;
+      gap: 14px;
+      width: min(780px, calc(100% - 20px));
+      margin: 14px auto 36px;
+    }
+    .mobile-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: grid;
+      gap: 10px;
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(12px);
+    }
+    .mobile-topbar h1 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 22px;
+    }
+    .quick-nav {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .quick-nav a,
+    .mini-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 7px 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+    }
+    .mobile-card {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .mobile-card h2 {
+      margin: 0 0 10px;
+      padding-left: 10px;
+      font-size: 20px;
+    }
+    .mobile-card h3 {
+      margin: 16px 0 8px;
+      font-size: 17px;
+    }
+    .rule-list,
+    .day-list,
+    .compact-list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .rule-list li,
+    .compact-list li {
+      padding: 10px;
+      border: 1px solid #e5edf7;
+      border-radius: 6px;
+      background: #fbfdff;
+    }
+    .day-card {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .day-title {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .day-title strong {
+      color: var(--navy);
+      font-size: 17px;
+      line-height: 1.25;
+    }
+    .tag {
+      flex: 0 0 auto;
+      padding: 3px 7px;
+      border-radius: 6px;
+      background: #edf7f1;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .tag.warn {
+      background: #fff8eb;
+      color: var(--amber);
+    }
+    .day-grid {
+      display: grid;
+      gap: 6px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .day-grid b {
+      color: var(--navy);
+    }
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .copy-block {
+      margin: 8px 0 0;
+      padding: 12px;
+      border: 1px solid #dfe7f2;
+      border-radius: 8px;
+      background: #f8fafc;
+      color: #243047;
+      white-space: pre-wrap;
+      font-size: 13px;
+    }
+    @media (max-width: 520px) {
+      .quick-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .link-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="mobile-topbar">
+    <div>
+      <p class="eyebrow">Offline Field Pack</p>
+      <h1>甘南 + 莲宝叶则移动端速查</h1>
+    </div>
+    <nav class="quick-nav" aria-label="移动端速查导航">
+      <a href="#today">每日</a>
+      <a href="#risk">应急</a>
+      <a href="#check">睡前</a>
+      <a href="#links">入口</a>
+    </nav>
+  </header>
+
+  <main class="mobile-shell">
+    <section class="mobile-card">
+      <h2>三条铁律</h2>
+      <ol class="rule-list">
+        <li>扎尕那全天和莲宝叶则全天不能被压缩。</li>
+        <li>午后雷雨、路滑、高反、闭园、封路时，先砍顺路小点，不赶夜路。</li>
+        <li>每天晚上确认第二天：天气、门票/开放、出发时间、油量、早餐、砍点顺序。</li>
+      </ol>
+    </section>
+
+    <section id="today" class="mobile-card">
+      <h2>每日执行</h2>
+      <div class="day-list">
+        <article class="day-card">
+          <div class="day-title"><strong>D0 兰州抵达</strong><span class="tag warn">准备</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>到兰州、取车/见司机、补给、睡好。</div>
+            <div><b>硬线：</b>不夜游、不熬夜、不喝酒。</div>
+            <div><b>必查：</b>车辆、保险、离线地图、天气、酒店、D1 出发时间。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D1 兰州 → 夏河</strong><span class="tag">拉卜楞</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>适应海拔，拍拉卜楞寺和桑科草原。</div>
+            <div><b>出发：</b>08:00 兰州。</div>
+            <div><b>主机位：</b>转经长廊、贡唐宝塔/寺院外侧高点、桑科草原日落。</div>
+            <div><b>硬截止：</b>20:30 前回夏河。</div>
+            <div><b>先砍：</b>桑科深度停留，再砍贡唐宝塔。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D2 夏河 → 甘加 → 合作</strong><span class="tag">白石崖</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>拍甘加地貌，住合作，为扎尕那留体力。</div>
+            <div><b>出发：</b>08:30 夏河。</div>
+            <div><b>主机位：</b>八角城、白石崖、米拉日巴佛阁蓝调。</div>
+            <div><b>硬截止：</b>15:00-17:00 到合作休整。</div>
+            <div><b>先砍：</b>八角城深度，再砍米拉日巴入内。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D3 合作 → 扎尕那</strong><span class="tag warn">日落</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>天黑前到扎尕那，只追一个日落机位。</div>
+            <div><b>出发：</b>08:00 合作。</div>
+            <div><b>主机位：</b>达日观景台或业日村附近，二选一。</div>
+            <div><b>硬截止：</b>抵达后不来回跑，天黑后不换点。</div>
+            <div><b>先砍：</b>路上小停靠全砍。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D4 扎尕那全天</strong><span class="tag warn">核心</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>晨雾、石城、村寨、栈道。</div>
+            <div><b>出发：</b>日出前 30-45 分钟到位。</div>
+            <div><b>主机位：</b>达日/业日/东哇晨雾，仙女滩/栈道，村寨傍晚。</div>
+            <div><b>硬截止：</b>中午强光休息；雨后不进危险沟谷。</div>
+            <div><b>先砍：</b>峡谷深度，再砍仙女滩；保日出和傍晚。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D5 扎尕那 → 唐克</strong><span class="tag warn">黄河</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>轻拍郎木寺/花湖，保黄河九曲日落。</div>
+            <div><b>出发：</b>08:00 前离开扎尕那。</div>
+            <div><b>主机位：</b>郎木寺外观、若尔盖花湖、黄河九曲第一湾日落。</div>
+            <div><b>硬截止：</b>17:00 前到唐克/黄河九曲区域。</div>
+            <div><b>先砍：</b>郎木寺深度，再砍花湖停留。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D6 唐克/若尔盖 → 阿坝县</strong><span class="tag">缓冲</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>安全到阿坝县，适应海拔，给莲宝叶则留体力。</div>
+            <div><b>出发：</b>08:30。</div>
+            <div><b>主机位：</b>顺路草原、公路、经幡、月亮湾/瓦切塔林可选。</div>
+            <div><b>硬截止：</b>下午到阿坝县，不夜路。</div>
+            <div><b>先砍：</b>所有顺路景点都可砍。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D7 莲宝叶则全天</strong><span class="tag warn">核心</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>湖泊倒影、石山压缩、高位观景台、蓝调。</div>
+            <div><b>出发：</b>06:30 阿坝县，按景区开放调整。</div>
+            <div><b>主机位：</b>扎尕尔措、湖边石山、高位观景台/4520 方向。</div>
+            <div><b>硬截止：</b>服从闭园；高反、雷雨、风大立刻降强度。</div>
+            <div><b>先砍：</b>高位观景台，再砍蓝调；保湖泊石山安全图。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D8 阿坝县 → 合作/临夏</strong><span class="tag">返程</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>长返程第一段，只顺路记录。</div>
+            <div><b>出发：</b>08:00-08:30。</div>
+            <div><b>主机位：</b>车窗、草原、公路、经幡，安全停车才拍。</div>
+            <div><b>硬截止：</b>不从阿坝县直冲兰州机场。</div>
+            <div><b>先砍：</b>所有拍摄都可砍。</div>
+          </div>
+        </article>
+        <article class="day-card">
+          <div class="day-title"><strong>D9 合作/临夏 → 兰州</strong><span class="tag">收尾</span></div>
+          <div class="day-grid">
+            <div><b>目标：</b>还车、返程，不加刚性景点。</div>
+            <div><b>出发：</b>按航班/高铁倒推，保守到兰州。</div>
+            <div><b>硬截止：</b>返程前 3 小时到机场或高铁站更稳。</div>
+            <div><b>必查：</b>车身、油量、后备箱、相机、电池、卡、硬盘。</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="risk" class="mobile-card">
+      <h2>应急红线</h2>
+      <ul class="compact-list">
+        <li><b>高反：</b>头痛加重、恶心、胸闷、走路不稳、意识异常、持续呕吐时，停止拍摄，下降海拔或就医。</li>
+        <li><b>天气：</b>雷暴、大风、冰雹、短时强降雨时，取消高点、湖边、湿滑栈道和无人机。</li>
+        <li><b>扎尕那：</b>雨后路滑或浓雾无开窗，拍村寨近景和公共观景点，不进危险沟谷。</li>
+        <li><b>黄河：</b>17:00 前到不了唐克，放弃日落，不夜路硬追。</li>
+        <li><b>莲宝叶则：</b>闭园、只开放小范围或身体不适，改阿坝县休整和安全公路轻拍。</li>
+        <li><b>返程：</b>D8 天气或体力差，住合作/临夏，不直冲兰州机场。</li>
+      </ul>
+    </section>
+
+    <section id="check" class="mobile-card">
+      <h2>每晚 5 分钟</h2>
+      <ol class="compact-list">
+        <li>明天最重要的一张照片是什么？</li>
+        <li>明天第一个要砍的点是什么？</li>
+        <li>明天几点出发，几点必须到终点？</li>
+        <li>门票、开放、观光车、停车和早餐是否确认？</li>
+        <li>照片是否双备份，电池是否全充？</li>
+        <li>天气失败时，替代主图是什么？</li>
+      </ol>
+    </section>
+
+    <section class="mobile-card">
+      <h2>现场话术</h2>
+      <h3>给司机</h3>
+      <div class="copy-block">师傅您好，我们这趟主要是摄影，不是普通打卡。每天最重要的是日出、日落、扎尕那和莲宝叶则的核心机位。如果天气、路况、景区政策不合适，我们可以砍小景点，但不要赶夜路，也不要走危险路。请您每天晚上帮我们一起确认第二天出发时间、路况、加油、停车点和景区是否开放。</div>
+      <h3>给酒店 / 民宿</h3>
+      <div class="copy-block">您好，我们是摄影行程，可能清晨 5 点左右出门。请问停车是否方便？早上能否提前出门？热水和供暖是否稳定？如果方便，也请帮忙问一下明天景区是否正常开放、是否需要预约、观光车最早几点。</div>
+      <h3>给景区</h3>
+      <div class="copy-block">您好，请问今天景区是否全线开放？门票是否需要实名预约？是否必须乘坐观光车？最早入园和最晚离园时间是几点？哪些区域不能拍照、不能飞无人机、不能进入？</div>
+    </section>
+
+    <section id="links" class="mobile-card">
+      <h2>离线入口</h2>
+      <div class="link-grid">
+        <a class="mini-link" href="gannan-dashboard.html">总控台</a>
+        <a class="mini-link" href="gannan-daily-cards.html">每日卡</a>
+        <a class="mini-link" href="gannan-shot-list.html">出片清单</a>
+        <a class="mini-link" href="gannan-photo-map.html">机位地图</a>
+        <a class="mini-link" href="gannan-china-map-pack.html">国内导航</a>
+        <a class="mini-link" href="gannan-contingency-plan.html">应急预案</a>
+        <a class="mini-link" href="gannan-communication-checklist.html">沟通话术</a>
+        <a class="mini-link" href="gannan-gear-checklist.html">装备清单</a>
+        <a class="mini-link" href="gannan-reverification-sop.html">复核 SOP</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

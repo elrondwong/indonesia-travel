@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>甘南 + 莲宝叶则来源故障处理</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gannan-page.css" />
+</head>
+<body>
+<header class="gannan-topbar">
+  <div class="gannan-topbar-main">
+    <p class="eyebrow">Gannan Photo Route Guide</p>
+    <strong>甘南 + 莲宝叶则摄影攻略</strong>
+  </div>
+  <nav class="gannan-topbar-actions" aria-label="甘南攻略导航">
+    <a href="gannan-dashboard.html">总控台</a>
+    <a href="gannan.html">主攻略</a>
+    <a href="gannan-daily-cards.html">每日卡</a>
+    <a href="gannan-mobile-pack.html">速查</a>
+    <a href="gannan-photo-handbook.html">摄影</a>
+    <a href="gannan-light-astro.html">光线</a>
+    <a href="gannan-shot-list.html">出片</a>
+    <a href="gannan-photo-readiness.html">出片闸门</a>
+    <a href="gannan-photo-map.html">机位</a>
+    <a href="gannan-photo-spot-check.html">机位核验</a>
+    <a href="gannan-china-map-pack.html">导航</a>
+    <a href="gannan-source-ledger.html">来源</a>
+    <a href="gannan-source-health.html">来源健康</a>
+    <a href="gannan-source-fallbacks.html">故障处理</a>
+    <a href="gannan-evidence-archive.html">证据</a>
+    <a href="gannan-quote-templates.html">询价</a>
+    <a href="gannan-order-workbench.html">预算</a>
+    <a href="gannan-order-handoff.html">接力</a>
+    <a href="gannan-order-start.html">启动</a>
+    <a href="gannan-order-candidates.html">候选</a>
+    <a href="gannan-candidate-scorecard.html">评分</a>
+    <a href="gannan-order-coverage.html">覆盖</a>
+    <a href="gannan-order-report.html">报告</a>
+    <a href="gannan-booking-gate.html">下单</a>
+    <a href="gannan-goal-audit.html">目标审计</a>
+    <a href="gannan-reverification-sop.html">复核</a>
+    <a href="gannan-reverification-schedule.html">日程</a>
+    <a href="gannan-reverification-calendar.html">日历</a>
+    <a href="gannan-reverification-diff.html">差异</a>
+    <a href="gannan-contingency-plan.html">应急</a>
+    <a href="gannan-final-audit.html">核验</a>
+  </nav>
+</header>
+<header id="title-block-header">
+<h1 class="title">甘南 + 莲宝叶则来源故障处理</h1>
+</header>
+<h1 id="甘南--莲宝叶则来源故障处理">甘南 + 莲宝叶则来源故障处理</h1>
+<p>更新日期：2026-06-25<br />
+来源台账：<a
+href="甘南莲宝叶则_来源台账.md">甘南莲宝叶则_来源台账.md</a><br />
+来源健康报告：<a
+href="甘南莲宝叶则_来源健康报告.md">甘南莲宝叶则_来源健康报告.md</a></p>
+<p>这份报告回答一个很现实的问题：外链打不开、被
+403、超时或只能人工打开时，下一步该找谁、怎么交叉验证、哪些项目必须暂停下单。</p>
+<h2 id="探测状态">探测状态</h2>
+<p>本次未执行在线探测。默认报告按台账中的 A
+级和高时效来源生成故障处理手册；如需把当前外链状态写进报告，运行：</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_source_fallbacks.py <span class="at">--online</span></span></code></pre></div>
+<h2 id="下单阻塞口径">下单阻塞口径</h2>
+<p>下面这些 A 级来源如果没有人工复核证据，不能进入对应订单下单：</p>
+<table>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>项目</th>
+<th>状态</th>
+<th>必须补的证据</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ticket_labrang_ctrip</td>
+<td>拉卜楞寺</td>
+<td>未探测</td>
+<td>景区现场/酒店前台 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="even">
+<td>ticket_ganjia_ctrip</td>
+<td>甘加秘境</td>
+<td>未探测</td>
+<td>甘南文旅/酒店前台 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="odd">
+<td>official_gannan_culture</td>
+<td>甘南景区公告</td>
+<td>未探测</td>
+<td>酒店前台/司机当地消息 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="even">
+<td>ticket_zhagana_ctrip</td>
+<td>扎尕那</td>
+<td>未探测</td>
+<td>甘南文旅/酒店前台/景区电话 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="odd">
+<td>ticket_zhagana_qunar</td>
+<td>扎尕那</td>
+<td>未探测</td>
+<td>携程/官方/酒店前台 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="even">
+<td>ticket_flower_lake_ctrip</td>
+<td>若尔盖花湖</td>
+<td>未探测</td>
+<td>景区电话/司机当地确认 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="odd">
+<td>ticket_yellow_river_ctrip</td>
+<td>黄河九曲第一湾</td>
+<td>未探测</td>
+<td>现场/司机当地确认 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="even">
+<td>ticket_lianbao_ctrip</td>
+<td>莲宝叶则</td>
+<td>未探测</td>
+<td>阿坝州文旅/酒店前台/景区电话 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="odd">
+<td>official_aba_culture</td>
+<td>阿坝州文旅</td>
+<td>未探测</td>
+<td>阿坝县酒店/司机当地消息 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="even">
+<td>flight_lanzhou_airport</td>
+<td>兰州中川机场</td>
+<td>未探测</td>
+<td>航司App/航旅纵横/12306 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="odd">
+<td>weather_china</td>
+<td>天气</td>
+<td>未探测</td>
+<td>中央气象台/司机当地消息 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="even">
+<td>weather_cma</td>
+<td>天气</td>
+<td>未探测</td>
+<td>中国天气/司机当地消息 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="odd">
+<td>drone_uom</td>
+<td>无人机合规</td>
+<td>未探测</td>
+<td>现场禁飞牌/景区工作人员 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="even">
+<td>map_amap_search</td>
+<td>高德地图搜索</td>
+<td>未探测</td>
+<td>百度地图/司机定位/酒店定位 + 复核日志 + 截图/聊天记录</td>
+</tr>
+<tr class="odd">
+<td>map_baidu_search</td>
+<td>百度地图搜索</td>
+<td>未探测</td>
+<td>高德地图/司机定位/酒店定位 + 复核日志 + 截图/聊天记录</td>
+</tr>
+</tbody>
+</table>
+<h2 id="故障处理矩阵">故障处理矩阵</h2>
+<table>
+<thead>
+<tr class="header">
+<th>状态</th>
+<th>严重性</th>
+<th>ID</th>
+<th>优先级</th>
+<th>项目</th>
+<th>自动详情</th>
+<th>备选入口</th>
+<th>人工动作</th>
+<th>轮次</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>drone_uom</td>
+<td>A</td>
+<td>无人机合规</td>
+<td>默认离线</td>
+<td>现场禁飞牌/景区工作人员</td>
+<td>改看 UOM、景区公告和现场禁飞牌；现场工作人员口径优先。</td>
+<td>T-14, T-7</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>flight_lanzhou_airport</td>
+<td>A</td>
+<td>兰州中川机场</td>
+<td>默认离线</td>
+<td>航司App/航旅纵横/12306</td>
+<td>改用航司 App、航旅纵横、12306 或 OTA
+实际日期下单页；截图必须含日期、行李和退改。</td>
+<td>T-14, T-7, T-3</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>关键人工复核</td>
+<td>health_cdc_altitude</td>
+<td>A</td>
+<td>高海拔旅行健康</td>
+<td>默认离线</td>
+<td>出发前咨询医生/旅行医学门诊</td>
+<td>改看 CDC/旅行医学资料并咨询医生；个人用药和慢病不由攻略替代。</td>
+<td>T-14, T-7</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>关键人工复核</td>
+<td>health_cdc_yellowbook</td>
+<td>A</td>
+<td>高海拔疾病资料</td>
+<td>默认离线</td>
+<td>出发前咨询医生/旅行医学门诊</td>
+<td>改看 CDC/旅行医学资料并咨询医生；个人用药和慢病不由攻略替代。</td>
+<td>T-14, T-7</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>map_amap_search</td>
+<td>A</td>
+<td>高德地图搜索</td>
+<td>默认离线</td>
+<td>百度地图/司机定位/酒店定位</td>
+<td>改用高德/百度中文地名搜索，并让司机确认实际路况、施工、停车和最晚撤离时间。</td>
+<td>T-7, T-3, T-1, D-day</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>map_baidu_search</td>
+<td>A</td>
+<td>百度地图搜索</td>
+<td>默认离线</td>
+<td>高德地图/司机定位/酒店定位</td>
+<td>改用高德/百度中文地名搜索，并让司机确认实际路况、施工、停车和最晚撤离时间。</td>
+<td>T-7, T-3, T-1, D-day</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>official_aba_culture</td>
+<td>A</td>
+<td>阿坝州文旅</td>
+<td>默认离线</td>
+<td>阿坝县酒店/司机当地消息</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-3, T-1, D-day</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>official_gannan_culture</td>
+<td>A</td>
+<td>甘南景区公告</td>
+<td>默认离线</td>
+<td>酒店前台/司机当地消息</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-3, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>ticket_flower_lake_ctrip</td>
+<td>A</td>
+<td>若尔盖花湖</td>
+<td>默认离线</td>
+<td>景区电话/司机当地确认</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-3, T-1</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>ticket_ganjia_ctrip</td>
+<td>A</td>
+<td>甘加秘境</td>
+<td>默认离线</td>
+<td>甘南文旅/酒店前台</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-14, T-7, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>ticket_labrang_ctrip</td>
+<td>A</td>
+<td>拉卜楞寺</td>
+<td>默认离线</td>
+<td>景区现场/酒店前台</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-14, T-7, T-1</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>ticket_lianbao_ctrip</td>
+<td>A</td>
+<td>莲宝叶则</td>
+<td>默认离线</td>
+<td>阿坝州文旅/酒店前台/景区电话</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-14, T-7, T-3, T-1, D-day</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>ticket_yellow_river_ctrip</td>
+<td>A</td>
+<td>黄河九曲第一湾</td>
+<td>默认离线</td>
+<td>现场/司机当地确认</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-3, T-1</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>ticket_zhagana_ctrip</td>
+<td>A</td>
+<td>扎尕那</td>
+<td>默认离线</td>
+<td>甘南文旅/酒店前台/景区电话</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-14, T-7, T-3, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>ticket_zhagana_qunar</td>
+<td>A</td>
+<td>扎尕那</td>
+<td>默认离线</td>
+<td>携程/官方/酒店前台</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-14, T-7, T-3, T-1</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>weather_china</td>
+<td>A</td>
+<td>天气</td>
+<td>默认离线</td>
+<td>中央气象台/司机当地消息</td>
+<td>改用中国天气、中央气象台、天气 App
+和司机本地消息；雷雨/大风/降雪优先触发砍点。</td>
+<td>T-7, T-3, T-1, D-day</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>阻塞下单，需人工复核</td>
+<td>weather_cma</td>
+<td>A</td>
+<td>天气</td>
+<td>默认离线</td>
+<td>中国天气/司机当地消息</td>
+<td>改用中国天气、中央气象台、天气 App
+和司机本地消息；雷雨/大风/降雪优先触发砍点。</td>
+<td>T-7, T-3, T-1, D-day</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>备选入口复核</td>
+<td>budget_klook_gannan</td>
+<td>B</td>
+<td>甘南成团价格锚点</td>
+<td>默认离线</td>
+<td>其他旅行社/包车报价</td>
+<td>改用旅行社/包车报价/Klook
+等价格锚点；只作为预算参考，不替代成交价。</td>
+<td>T-14, T-7</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>人工确认</td>
+<td>hotel_xiahe_agoda</td>
+<td>B</td>
+<td>夏河住宿</td>
+<td>默认离线</td>
+<td>携程/飞猪/酒店电话</td>
+<td>改用携程/飞猪/美团/酒店电话；电话确认停车、热水/供暖、早餐、早出门和取消规则。</td>
+<td>T-14, T-7</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>备选入口复核</td>
+<td>sun_aba</td>
+<td>B</td>
+<td>阿坝日出日落</td>
+<td>默认离线</td>
+<td>天气App/摄影App</td>
+<td>改用天气 App、摄影 App
+或手机日出日落工具；山体遮挡必须现场加余量。</td>
+<td>T-7, T-3, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>备选入口复核</td>
+<td>sun_lanzhou</td>
+<td>B</td>
+<td>兰州日出日落</td>
+<td>默认离线</td>
+<td>天气App/摄影App</td>
+<td>改用天气 App、摄影 App
+或手机日出日落工具；山体遮挡必须现场加余量。</td>
+<td>T-7, T-3</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>备选入口复核</td>
+<td>map_aba_lianbao</td>
+<td>B</td>
+<td>阿坝县到莲宝叶则</td>
+<td>默认离线</td>
+<td>高德/百度/酒店前台/司机</td>
+<td>改用高德/百度中文地名搜索，并让司机确认实际路况、施工、停车和最晚撤离时间。</td>
+<td>T-7, T-3, T-1, D-day</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>备选入口复核</td>
+<td>map_hezuo_zhagana</td>
+<td>B</td>
+<td>合作到扎尕那</td>
+<td>默认离线</td>
+<td>高德/百度/司机</td>
+<td>改用高德/百度中文地名搜索，并让司机确认实际路况、施工、停车和最晚撤离时间。</td>
+<td>T-7, T-3, T-1</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>备选入口复核</td>
+<td>map_lanzhou_xiahe</td>
+<td>B</td>
+<td>兰州到夏河</td>
+<td>默认离线</td>
+<td>高德/百度/司机</td>
+<td>改用高德/百度中文地名搜索，并让司机确认实际路况、施工、停车和最晚撤离时间。</td>
+<td>T-7, T-3, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>备选入口复核</td>
+<td>map_tangke_aba</td>
+<td>B</td>
+<td>唐克到阿坝县</td>
+<td>默认离线</td>
+<td>高德/百度/司机</td>
+<td>改用高德/百度中文地名搜索，并让司机确认实际路况、施工、停车和最晚撤离时间。</td>
+<td>T-7, T-3, T-1</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>人工确认</td>
+<td>ticket_flower_lake_qunar</td>
+<td>B</td>
+<td>若尔盖花湖</td>
+<td>默认离线</td>
+<td>携程/现场</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>人工确认</td>
+<td>ticket_labrang_eztravel</td>
+<td>B</td>
+<td>拉卜楞寺</td>
+<td>默认离线</td>
+<td>携程/酒店前台</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-14, T-7</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>人工确认</td>
+<td>ticket_langmusi_ctrip</td>
+<td>B</td>
+<td>郎木寺</td>
+<td>默认离线</td>
+<td>现场/酒店前台</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>人工确认</td>
+<td>ticket_langmusi_qunar</td>
+<td>B</td>
+<td>郎木寺</td>
+<td>默认离线</td>
+<td>携程/现场</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-1</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>人工确认</td>
+<td>ticket_milarepa_ctrip</td>
+<td>B</td>
+<td>米拉日巴佛阁</td>
+<td>默认离线</td>
+<td>现场售票处</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>人工确认</td>
+<td>ticket_sangke_ctrip</td>
+<td>B</td>
+<td>桑科草原</td>
+<td>默认离线</td>
+<td>酒店/司机当地确认</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-1</td>
+</tr>
+<tr class="even">
+<td>未探测</td>
+<td>人工确认</td>
+<td>ticket_yellow_river_qunar</td>
+<td>B</td>
+<td>黄河九曲第一湾</td>
+<td>默认离线</td>
+<td>携程/现场</td>
+<td>改看官方公告、OTA
+详情页、景区电话、酒店前台和司机当地消息；开放范围冲突时不提前买死。</td>
+<td>T-7, T-1</td>
+</tr>
+<tr class="odd">
+<td>未探测</td>
+<td>备选入口复核</td>
+<td>budget_toursforfun_gannan</td>
+<td>C</td>
+<td>甘南短线价格锚点</td>
+<td>默认离线</td>
+<td>Klook/本地旅行社</td>
+<td>改用旅行社/包车报价/Klook
+等价格锚点；只作为预算参考，不替代成交价。</td>
+<td>T-14, T-7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="现场处理顺序">现场处理顺序</h2>
+<ol type="1">
+<li>先判断是不是 A 级来源；A
+级票务、天气、路线、无人机失败时，先暂停对应下单或当日进入。</li>
+<li>按 <code>fallback</code>
+字段打开备选入口，不只换一个页面，要做至少两个来源交叉验证。</li>
+<li>保存证据：订单页/公告页截图、酒店或司机聊天记录、现场牌示照片。</li>
+<li>在 <code>data/gannan_reverification_log.csv</code>
+里写清状态、决策、下一步和下一次复核日期。</li>
+<li>若官方、OTA、酒店/司机三方冲突，以更保守的口径执行：少买死、少赶路、保留改线。</li>
+</ol>
+<h2 id="使用命令">使用命令</h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_source_fallbacks.py</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_source_fallbacks.py <span class="at">--online</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/gannan_source_fallbacks.py <span class="at">--check</span></span></code></pre></div>
+<script src="gannan-app.js"></script>
+</body>
+</html>

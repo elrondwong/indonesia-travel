@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>甘南 + 莲宝叶则预算与订单核验表</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gannan-page.css" />
+</head>
+<body>
+<header class="gannan-topbar">
+  <div class="gannan-topbar-main">
+    <p class="eyebrow">Gannan Photo Route Guide</p>
+    <strong>甘南 + 莲宝叶则摄影攻略</strong>
+  </div>
+  <nav class="gannan-topbar-actions" aria-label="甘南攻略导航">
+    <a href="gannan-dashboard.html">总控台</a>
+    <a href="gannan.html">主攻略</a>
+    <a href="gannan-daily-cards.html">每日卡</a>
+    <a href="gannan-mobile-pack.html">速查</a>
+    <a href="gannan-photo-handbook.html">摄影</a>
+    <a href="gannan-light-astro.html">光线</a>
+    <a href="gannan-shot-list.html">出片</a>
+    <a href="gannan-photo-readiness.html">出片闸门</a>
+    <a href="gannan-photo-map.html">机位</a>
+    <a href="gannan-photo-spot-check.html">机位核验</a>
+    <a href="gannan-china-map-pack.html">导航</a>
+    <a href="gannan-source-ledger.html">来源</a>
+    <a href="gannan-source-health.html">来源健康</a>
+    <a href="gannan-source-fallbacks.html">故障处理</a>
+    <a href="gannan-evidence-archive.html">证据</a>
+    <a href="gannan-quote-templates.html">询价</a>
+    <a href="gannan-order-workbench.html">预算</a>
+    <a href="gannan-order-handoff.html">接力</a>
+    <a href="gannan-order-start.html">启动</a>
+    <a href="gannan-order-candidates.html">候选</a>
+    <a href="gannan-candidate-scorecard.html">评分</a>
+    <a href="gannan-order-coverage.html">覆盖</a>
+    <a href="gannan-order-report.html">报告</a>
+    <a href="gannan-booking-gate.html">下单</a>
+    <a href="gannan-goal-audit.html">目标审计</a>
+    <a href="gannan-reverification-sop.html">复核</a>
+    <a href="gannan-reverification-schedule.html">日程</a>
+    <a href="gannan-reverification-calendar.html">日历</a>
+    <a href="gannan-reverification-diff.html">差异</a>
+    <a href="gannan-contingency-plan.html">应急</a>
+    <a href="gannan-final-audit.html">核验</a>
+  </nav>
+</header>
+<header id="title-block-header">
+<h1 class="title">甘南 + 莲宝叶则预算与订单核验表</h1>
+</header>
+<h1 id="甘南--莲宝叶则预算与订单核验表">甘南 +
+莲宝叶则预算与订单核验表</h1>
+<p>更新日期：2026-06-25<br />
+对应主攻略：<a
+href="甘南莲宝叶则_完整攻略.md">甘南莲宝叶则_完整攻略.md</a><br />
+用途：把机票、高铁、包车/租车、酒店、门票和保险从“攻略建议”推进到“能下单的候选清单”。未给出发日期前，本表只做核验框架和预算警戒线。</p>
+<p>反复复核流程见：<a
+href="甘南莲宝叶则_反复核验SOP.md">甘南莲宝叶则_反复核验SOP.md</a>，日志模板见
+<a
+href="data/gannan_reverification_log.template.csv">data/gannan_reverification_log.template.csv</a>。
+结构化订单候选表见：<a
+href="甘南莲宝叶则_订单候选模板.md">甘南莲宝叶则_订单候选模板.md</a>。
+候选覆盖率检查见：<a
+href="甘南莲宝叶则_订单覆盖率闸门.md">甘南莲宝叶则_订单覆盖率闸门.md</a>，用于确认去返程、D1-D8
+酒店、车辆和核心门票没有漏项。 每轮复核后的汇总报告见：<a
+href="甘南莲宝叶则_订单复核报告.md">甘南莲宝叶则_订单复核报告.md</a>，生成命令：<code>python3 scripts/gannan_order_report.py</code>。
+订单截图和聊天确认的归档规范见：<a
+href="甘南莲宝叶则_证据归档规范.md">甘南莲宝叶则_证据归档规范.md</a>，证据检查命令：<code>python3 scripts/check_gannan_evidence.py --strict</code>。</p>
+<h2 id="使用方式">使用方式</h2>
+<pre class="text"><code>1. 先填出发城市、日期、人数、房型、预算和是否自驾。
+2. 每个订单至少保留 2-3 个候选。
+3. 价格只认下单页最终含税价，不认搜索列表页最低价。
+4. 所有可变项在 T-14、T-7、T-3、T-1 四次复核。
+5. 高原路线宁可多花一点买可取消、可改期、早出门和停车稳定，不买“看起来便宜但执行风险高”的选项。</code></pre>
+<h2 id="外部价格锚点">外部价格锚点</h2>
+<p>这些不是本攻略报价，只是判断市场区间的参照。</p>
+<table>
+<thead>
+<tr class="header">
+<th>来源</th>
+<th>公开口径</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.klook.com/zh-CN/activity/113381-gannan/">Klook
+甘南巅峰慢游 9 日</a></td>
+<td>搜索核验时显示 9 日产品 5893 元起，含莲宝叶则、扎尕那等线路</td>
+<td>作为“成团产品人均价”的上/中位参考；摄影包车若价格显著高于它，需要看是否含独立车辆、住宿档位和司导服务</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://cn.toursforfun.com/trip/vacation-packages-105280620.html">ToursForFun
+甘南 6 日 5 晚</a></td>
+<td>搜索核验时显示 6 日 5 晚约 410
+美元起，并提示价格随日期、房型、航班和附加服务变化</td>
+<td>作为短线团费参考，不直接替代 9 天摄影版预算</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://www.agoda.com/zh-tw/xiahe/maps/gannan-cn.html">Agoda
+夏河住宿页</a></td>
+<td>搜索核验时可见夏河住宿按星级/日期浮动</td>
+<td>只做酒店价格浮动提醒；最终以实际日期 OTA 下单页为准</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.lzairport.com/">兰州中川国际机场</a> /
+12306</td>
+<td>到达兰州和机场交通的基础核验入口</td>
+<td>用于确认航班、高铁和机场城际交通，不用第三方游记替代</td>
+</tr>
+</tbody>
+</table>
+<h2 id="预算警戒线">预算警戒线</h2>
+<p>以下是下单前的警戒区间，不是承诺价格。超过警戒线不一定不能买，但必须说明为什么值得。</p>
+<table>
+<thead>
+<tr class="header">
+<th>项目</th>
+<th style="text-align: right;">经济执行</th>
+<th style="text-align: right;">舒适摄影</th>
+<th style="text-align: right;">价格过高警戒</th>
+<th>核验口径</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>大交通：往返兰州</td>
+<td style="text-align: right;">按出发城市浮动</td>
+<td style="text-align: right;">按出发城市浮动</td>
+<td style="text-align: right;">比同日相近时段高 30% 以上</td>
+<td>航司 App + 携程/飞猪/航旅纵横 + 退改规则</td>
+</tr>
+<tr class="even">
+<td>包车/司导</td>
+<td style="text-align: right;">询价后填</td>
+<td style="text-align: right;">询价后填</td>
+<td style="text-align: right;">比同车型同路线 2 个报价均值高 25%
+以上</td>
+<td>至少问 3 家：车型、天数、司机食宿、油费、高速、停车</td>
+</tr>
+<tr class="odd">
+<td>自驾租车</td>
+<td style="text-align: right;">询价后填</td>
+<td style="text-align: right;">询价后填</td>
+<td style="text-align: right;">只给低价但不说明保险/异地/押金</td>
+<td>租车平台下单页 + 保险 + 里程 + 取还车</td>
+</tr>
+<tr class="even">
+<td>住宿：兰州</td>
+<td style="text-align: right;">250-450/间夜</td>
+<td style="text-align: right;">450-800/间夜</td>
+<td style="text-align: right;">1000+/间夜</td>
+<td>停车、取车点、机场/高铁距离</td>
+</tr>
+<tr class="odd">
+<td>住宿：夏河</td>
+<td style="text-align: right;">300-600/间夜</td>
+<td style="text-align: right;">600-1000/间夜</td>
+<td style="text-align: right;">1200+/间夜</td>
+<td>拉卜楞寺距离、热水、供暖、停车、早出门</td>
+</tr>
+<tr class="even">
+<td>住宿：合作</td>
+<td style="text-align: right;">250-500/间夜</td>
+<td style="text-align: right;">500-800/间夜</td>
+<td style="text-align: right;">1000+/间夜</td>
+<td>早餐、停车、电梯、补给方便</td>
+</tr>
+<tr class="odd">
+<td>住宿：扎尕那</td>
+<td style="text-align: right;">300-700/间夜</td>
+<td style="text-align: right;">700-1200/间夜</td>
+<td style="text-align: right;">1500+/间夜</td>
+<td>村内景观、热水、停车、早饭、窗景真实性</td>
+</tr>
+<tr class="even">
+<td>住宿：唐克/若尔盖</td>
+<td style="text-align: right;">250-600/间夜</td>
+<td style="text-align: right;">600-1000/间夜</td>
+<td style="text-align: right;">1200+/间夜</td>
+<td>黄河九曲日落后回酒店是否安全</td>
+</tr>
+<tr class="odd">
+<td>住宿：阿坝县</td>
+<td style="text-align: right;">300-700/间夜</td>
+<td style="text-align: right;">700-1200/间夜</td>
+<td style="text-align: right;">1500+/间夜</td>
+<td>供暖、热水、停车、供氧/制氧机、能否帮问莲宝叶则</td>
+</tr>
+<tr class="even">
+<td>门票/观光车总额</td>
+<td style="text-align: right;">500-700/人</td>
+<td style="text-align: right;">700-900/人</td>
+<td style="text-align: right;">1000+/人</td>
+<td>扎尕那、花湖、黄河九曲组合票按当天口径留余量</td>
+</tr>
+<tr class="odd">
+<td>餐饮和补给</td>
+<td style="text-align: right;">100-160/人/天</td>
+<td style="text-align: right;">160-260/人/天</td>
+<td style="text-align: right;">300+/人/天</td>
+<td>高原热饮、电解质、能量补给另算</td>
+</tr>
+<tr class="even">
+<td>保险</td>
+<td style="text-align: right;">20-80/人</td>
+<td style="text-align: right;">80-200/人</td>
+<td style="text-align: right;">不买是风险</td>
+<td>覆盖高原旅行、医疗、行李、取消更好</td>
+</tr>
+</tbody>
+</table>
+<h2 id="总预算模板">总预算模板</h2>
+<table>
+<thead>
+<tr class="header">
+<th>项目</th>
+<th>计算方式</th>
+<th style="text-align: right;">2 人</th>
+<th style="text-align: right;">4 人</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>往返兰州大交通</td>
+<td>实际航班/高铁 x 人数</td>
+<td style="text-align: right;">待填</td>
+<td style="text-align: right;">待填</td>
+<td>出发城市和日期确定后填</td>
+</tr>
+<tr class="even">
+<td>包车/租车</td>
+<td>日价 x 9 天 + 司机/油费/高速/停车</td>
+<td style="text-align: right;">待填</td>
+<td style="text-align: right;">待填</td>
+<td>包车按整车分摊，人数越多越划算</td>
+</tr>
+<tr class="odd">
+<td>酒店</td>
+<td>房价 x 房晚</td>
+<td style="text-align: right;">待填</td>
+<td style="text-align: right;">待填</td>
+<td>默认 8 晚；2 人 1 间，4 人 2 间</td>
+</tr>
+<tr class="even">
+<td>门票/观光车</td>
+<td>景区合计 x 人数</td>
+<td style="text-align: right;">待填</td>
+<td style="text-align: right;">待填</td>
+<td>扎尕那和组合票留余量</td>
+</tr>
+<tr class="odd">
+<td>餐饮</td>
+<td>日均 x 天数 x 人数</td>
+<td style="text-align: right;">待填</td>
+<td style="text-align: right;">待填</td>
+<td>高原补给另算</td>
+</tr>
+<tr class="even">
+<td>保险</td>
+<td>单价 x 人数</td>
+<td style="text-align: right;">待填</td>
+<td style="text-align: right;">待填</td>
+<td>不建议省</td>
+</tr>
+<tr class="odd">
+<td>机动</td>
+<td>总额 10%-15%</td>
+<td style="text-align: right;">待填</td>
+<td style="text-align: right;">待填</td>
+<td>应对涨价、改酒店、天气绕路</td>
+</tr>
+<tr class="even">
+<td>合计</td>
+<td>以上相加</td>
+<td style="text-align: right;">待填</td>
+<td style="text-align: right;">待填</td>
+<td>下单前再核</td>
+</tr>
+</tbody>
+</table>
+<h2 id="机票--高铁候选表">机票 / 高铁候选表</h2>
+<table>
+<thead>
+<tr class="header">
+<th>候选</th>
+<th>平台</th>
+<th>航班/车次</th>
+<th>起止时间</th>
+<th style="text-align: right;">含税价</th>
+<th>行李</th>
+<th>退改</th>
+<th>到达后交通</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>航司/12306</td>
+<td>待填</td>
+<td>待填</td>
+<td style="text-align: right;">待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待比</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>OTA</td>
+<td>待填</td>
+<td>待填</td>
+<td style="text-align: right;">待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待比</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>OTA</td>
+<td>待填</td>
+<td>待填</td>
+<td style="text-align: right;">待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待比</td>
+</tr>
+</tbody>
+</table>
+<h3 id="大交通选择规则">大交通选择规则</h3>
+<pre class="text"><code>1. 抵达兰州当天不建议再长途冲扎尕那。
+2. 若晚到兰州，D0 住兰州或机场附近，D1 再去夏河。
+3. 回程航班尽量安排 D9 下午或晚上；如果 D9 早班机，D8 必须住兰州。
+4. 便宜但深夜到达、无托运行李、退改差的票，不一定适合摄影装备行程。</code></pre>
+<h2 id="包车--租车询价表">包车 / 租车询价表</h2>
+<table>
+<thead>
+<tr class="header">
+<th>候选</th>
+<th>类型</th>
+<th>车型</th>
+<th style="text-align: right;">天数</th>
+<th style="text-align: right;">报价</th>
+<th>是否含油费</th>
+<th>是否含高速/停车</th>
+<th>司机食宿</th>
+<th>夜路态度</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>包车</td>
+<td>待填</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待比</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>包车</td>
+<td>待填</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>待比</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>租车自驾</td>
+<td>待填</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">待填</td>
+<td>自理</td>
+<td>自理</td>
+<td>无</td>
+<td>自控</td>
+<td>待比</td>
+</tr>
+</tbody>
+</table>
+<h3 id="必问问题">必问问题</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />是否走过兰州 - 夏河 - 扎尕那 - 唐克
+- 阿坝县 - 莲宝叶则 - 合作/临夏 - 兰州</label></li>
+<li><label><input
+type="checkbox" />是否接受摄影早出晚归，但拒绝危险夜路</label></li>
+<li><label><input
+type="checkbox" />是否熟悉扎尕那日出机位和莲宝叶则开放核验</label></li>
+<li><label><input type="checkbox" />报价是否含司机食宿</label></li>
+<li><label><input
+type="checkbox" />报价是否含油费、高速、停车、洗车</label></li>
+<li><label><input
+type="checkbox" />如果天气封路/景区关闭，是否可调整线路</label></li>
+<li><label><input
+type="checkbox" />车辆是否有商业险、座位险、行李空间</label></li>
+</ul>
+<h2 id="酒店候选表">酒店候选表</h2>
+<table>
+<thead>
+<tr class="header">
+<th>晚数</th>
+<th>区域</th>
+<th>候选 A</th>
+<th>候选 B</th>
+<th>候选 C</th>
+<th>必须确认</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D0</td>
+<td>兰州</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>取车/机场/高铁方便、停车</td>
+</tr>
+<tr class="even">
+<td>D1</td>
+<td>夏河</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>拉卜楞寺距离、热水、供暖、早出门</td>
+</tr>
+<tr class="odd">
+<td>D2</td>
+<td>合作</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>停车、早餐、补给</td>
+</tr>
+<tr class="even">
+<td>D3</td>
+<td>扎尕那</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>窗景真实性、停车、热水、晚饭</td>
+</tr>
+<tr class="odd">
+<td>D4</td>
+<td>扎尕那</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>同上，最好连住</td>
+</tr>
+<tr class="even">
+<td>D5</td>
+<td>唐克/若尔盖</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>黄河日落后回酒店是否安全</td>
+</tr>
+<tr class="odd">
+<td>D6</td>
+<td>阿坝县</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>供暖、热水、停车、供氧</td>
+</tr>
+<tr class="even">
+<td>D7</td>
+<td>阿坝县</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>连住，能否帮问莲宝叶则</td>
+</tr>
+<tr class="odd">
+<td>D8</td>
+<td>合作/临夏</td>
+<td>待填</td>
+<td>待填</td>
+<td>待填</td>
+<td>第二天回兰州时间、停车</td>
+</tr>
+</tbody>
+</table>
+<h3 id="酒店淘汰规则">酒店淘汰规则</h3>
+<pre class="text"><code>1. 不能确认停车的，淘汰。
+2. 不能确认热水/供暖的，扎尕那和阿坝县优先淘汰。
+3. 早出门不方便的，夏河、扎尕那、阿坝县优先淘汰。
+4. 村内民宿只发网图、不发真实房型或窗景的，降级。
+5. 不可取消且价格并不明显便宜的，降级。</code></pre>
+<h2 id="门票下单表">门票下单表</h2>
+<table>
+<thead>
+<tr class="header">
+<th>景区</th>
+<th style="text-align: right;">预算口径</th>
+<th>购买时间</th>
+<th>渠道</th>
+<th>是否实名</th>
+<th>退改</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>拉卜楞寺</td>
+<td style="text-align: right;">40-60/人</td>
+<td>D1 当天或前一天</td>
+<td>官方/OTA/现场</td>
+<td>看渠道</td>
+<td>看渠道</td>
+<td>内部拍摄限制优先</td>
+</tr>
+<tr class="even">
+<td>甘加秘境</td>
+<td style="text-align: right;">待核</td>
+<td>T-1</td>
+<td>官方/OTA/现场</td>
+<td>看渠道</td>
+<td>看渠道</td>
+<td>是否含八角城/白石崖/观光车</td>
+</tr>
+<tr class="odd">
+<td>米拉日巴佛阁</td>
+<td style="text-align: right;">20-30/人</td>
+<td>D2 当天</td>
+<td>现场/OTA</td>
+<td>看渠道</td>
+<td>看渠道</td>
+<td>蓝调外观更重要</td>
+</tr>
+<tr class="even">
+<td>扎尕那</td>
+<td style="text-align: right;">120-150/人预算</td>
+<td>T-7 至 T-1</td>
+<td>官方/OTA/酒店确认</td>
+<td>可能需要</td>
+<td>看渠道</td>
+<td>公开口径冲突，必须复核</td>
+</tr>
+<tr class="odd">
+<td>郎木寺</td>
+<td style="text-align: right;">30-60/人预算</td>
+<td>D5 当天</td>
+<td>现场/OTA</td>
+<td>看渠道</td>
+<td>看渠道</td>
+<td>甘肃侧/四川侧可能分别购票</td>
+</tr>
+<tr class="even">
+<td>若尔盖花湖</td>
+<td style="text-align: right;">105-120/人预算</td>
+<td>T-1</td>
+<td>官方/OTA</td>
+<td>可能需要</td>
+<td>看渠道</td>
+<td>是否含观光车</td>
+</tr>
+<tr class="odd">
+<td>黄河九曲第一湾</td>
+<td style="text-align: right;">100-130/人预算</td>
+<td>T-1</td>
+<td>官方/OTA</td>
+<td>可能需要</td>
+<td>看渠道</td>
+<td>是否含扶梯/观光组合</td>
+</tr>
+<tr class="even">
+<td>莲宝叶则</td>
+<td style="text-align: right;">120-150/人预算</td>
+<td>T-3 至 T-1</td>
+<td>官方/OTA/酒店确认</td>
+<td>可能需要</td>
+<td>看渠道</td>
+<td>开放范围和交通规则比票价更关键</td>
+</tr>
+</tbody>
+</table>
+<h2 id="四次复核记录">四次复核记录</h2>
+<table>
+<thead>
+<tr class="header">
+<th>时间</th>
+<th>要确认什么</th>
+<th>负责人</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T-14</td>
+<td>航班/高铁、包车/租车、核心酒店可取消房、扎尕那/阿坝县房态</td>
+<td>待填</td>
+<td>待填</td>
+</tr>
+<tr class="even">
+<td>T-7</td>
+<td>景区预约、酒店电话确认、司机路线确认、保险、初版天气趋势</td>
+<td>待填</td>
+<td>待填</td>
+</tr>
+<tr class="odd">
+<td>T-3</td>
+<td>天气、路况、莲宝叶则开放、扎尕那限流、黄河日落云量趋势</td>
+<td>待填</td>
+<td>待填</td>
+</tr>
+<tr class="even">
+<td>T-1</td>
+<td>次日门票、观光车、早出门、油量、早餐、日出日落、砍点顺序</td>
+<td>待填</td>
+<td>待填</td>
+</tr>
+</tbody>
+</table>
+<h2 id="下单前最终检查">下单前最终检查</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />大交通到达时间不压缩 D1</label></li>
+<li><label><input type="checkbox" />D9
+返程不需要从阿坝县当天直冲机场</label></li>
+<li><label><input
+type="checkbox" />包车/租车合同写清费用包含项</label></li>
+<li><label><input
+type="checkbox" />扎尕那和阿坝县住宿已电话确认</label></li>
+<li><label><input
+type="checkbox" />扎尕那门票口径已二次确认</label></li>
+<li><label><input
+type="checkbox" />莲宝叶则开放范围和最晚离园已二次确认</label></li>
+<li><label><input
+type="checkbox" />花湖和黄河九曲是否买组合票已按当天计划决定</label></li>
+<li><label><input type="checkbox" />所有订单截图离线保存</label></li>
+<li><label><input type="checkbox" />保险已买</label></li>
+<li><label><input type="checkbox" />机动预算至少 10%</label></li>
+</ul>
+<script src="gannan-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>甘南 + 莲宝叶则最终核验矩阵</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gannan-page.css" />
+</head>
+<body>
+<header class="gannan-topbar">
+  <div class="gannan-topbar-main">
+    <p class="eyebrow">Gannan Photo Route Guide</p>
+    <strong>甘南 + 莲宝叶则摄影攻略</strong>
+  </div>
+  <nav class="gannan-topbar-actions" aria-label="甘南攻略导航">
+    <a href="gannan-dashboard.html">总控台</a>
+    <a href="gannan.html">主攻略</a>
+    <a href="gannan-daily-cards.html">每日卡</a>
+    <a href="gannan-mobile-pack.html">速查</a>
+    <a href="gannan-photo-handbook.html">摄影</a>
+    <a href="gannan-light-astro.html">光线</a>
+    <a href="gannan-shot-list.html">出片</a>
+    <a href="gannan-photo-readiness.html">出片闸门</a>
+    <a href="gannan-photo-map.html">机位</a>
+    <a href="gannan-photo-spot-check.html">机位核验</a>
+    <a href="gannan-china-map-pack.html">导航</a>
+    <a href="gannan-source-ledger.html">来源</a>
+    <a href="gannan-source-health.html">来源健康</a>
+    <a href="gannan-source-fallbacks.html">故障处理</a>
+    <a href="gannan-evidence-archive.html">证据</a>
+    <a href="gannan-quote-templates.html">询价</a>
+    <a href="gannan-order-workbench.html">预算</a>
+    <a href="gannan-order-handoff.html">接力</a>
+    <a href="gannan-order-start.html">启动</a>
+    <a href="gannan-order-candidates.html">候选</a>
+    <a href="gannan-candidate-scorecard.html">评分</a>
+    <a href="gannan-order-coverage.html">覆盖</a>
+    <a href="gannan-order-report.html">报告</a>
+    <a href="gannan-booking-gate.html">下单</a>
+    <a href="gannan-goal-audit.html">目标审计</a>
+    <a href="gannan-reverification-sop.html">复核</a>
+    <a href="gannan-reverification-schedule.html">日程</a>
+    <a href="gannan-reverification-calendar.html">日历</a>
+    <a href="gannan-reverification-diff.html">差异</a>
+    <a href="gannan-contingency-plan.html">应急</a>
+    <a href="gannan-final-audit.html">核验</a>
+  </nav>
+</header>
+<header id="title-block-header">
+<h1 class="title">甘南 + 莲宝叶则最终核验矩阵</h1>
+</header>
+<h1 id="甘南--莲宝叶则最终核验矩阵">甘南 + 莲宝叶则最终核验矩阵</h1>
+<p>更新日期：2026-06-25<br />
+对应主攻略：<a
+href="甘南莲宝叶则_完整攻略.md">甘南莲宝叶则_完整攻略.md</a></p>
+<p>这份矩阵用于判断“攻略是否已经能执行”和“哪些项目必须等实际日期才能下单复核”。结论先说清楚：路线、摄影、机位、装备、沟通和核验框架已经完成；机票成交价、酒店成交价、包车/租车报价、景区最终开放和天气必须在具体日期确定后再做订单级复核。</p>
+<h2 id="完成度总表">完成度总表</h2>
+<table>
+<thead>
+<tr class="header">
+<th>要求</th>
+<th>当前状态</th>
+<th>证据文件</th>
+<th>还需要什么</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>参照印尼攻略拆分文档</td>
+<td>已完成</td>
+<td>主攻略、摄影手册、光线天象规划、大片交付清单、每日执行卡、移动端离线速查包、装备
+Checklist、沟通
+Checklist、询价消息包、来源台账、订单候选模板、高原天气应急预案、反复核验
+SOP、核验记录、预算工作台、机位地图索引、国内地图导航包</td>
+<td>无</td>
+</tr>
+<tr class="even">
+<td>兰州出发路线</td>
+<td>已完成</td>
+<td><a href="甘南莲宝叶则_完整攻略.md">甘南莲宝叶则_完整攻略.md</a></td>
+<td>若改成都出或夏河机场进，需要重排</td>
+</tr>
+<tr class="odd">
+<td>甘南 + 莲宝叶则主线</td>
+<td>已完成</td>
+<td>9 天 8 晚路线，8 天压缩版</td>
+<td>无</td>
+</tr>
+<tr class="even">
+<td>拍大片机位</td>
+<td>已完成</td>
+<td><a href="甘南莲宝叶则_摄影手册.md">甘南莲宝叶则_摄影手册.md</a>、<a
+href="甘南莲宝叶则_机位地图索引.md">甘南莲宝叶则_机位地图索引.md</a></td>
+<td>现场天气和开放范围当天确认</td>
+</tr>
+<tr class="odd">
+<td>结构化机位核验</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_机位核验表.md">甘南莲宝叶则_机位核验表.md</a>、<a
+href="data/gannan_photo_spots.csv">data/gannan_photo_spots.csv</a>、<a
+href="scripts/check_gannan_photo_spots.py">scripts/check_gannan_photo_spots.py</a></td>
+<td>出发前 T-3/T-1 按实际开放和天气改状态</td>
+</tr>
+<tr class="even">
+<td>光线天象规划</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_光线天象规划.md">甘南莲宝叶则_光线天象规划.md</a>、<a
+href="scripts/gannan_light_windows.py">scripts/gannan_light_windows.py</a>、<a
+href="data/gannan_light_points.csv">data/gannan_light_points.csv</a></td>
+<td>实际日期确定后生成光线表</td>
+</tr>
+<tr class="odd">
+<td>出片交付清单</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_大片交付清单.md">甘南莲宝叶则_大片交付清单.md</a></td>
+<td>现场每日复盘后勾选</td>
+</tr>
+<tr class="even">
+<td>出片准备闸门</td>
+<td>已完成策略级核验</td>
+<td><a
+href="甘南莲宝叶则_出片准备闸门.md">甘南莲宝叶则_出片准备闸门.md</a>、<a
+href="scripts/gannan_photo_readiness_gate.py">scripts/gannan_photo_readiness_gate.py</a></td>
+<td>真实 D1 日期、T-3/T-1 天气、景区开放和现场证据齐全后用
+<code>--strict</code> 复核</td>
+</tr>
+<tr class="odd">
+<td>移动端离线速查包</td>
+<td>已完成</td>
+<td><a href="gannan-mobile-pack.html">gannan-mobile-pack.html</a></td>
+<td>出发前在手机浏览器打开并确认可离线访问</td>
+</tr>
+<tr class="even">
+<td>国内地图导航包</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_国内地图导航包.md">甘南莲宝叶则_国内地图导航包.md</a>、<a
+href="gannan-china-map-pack.html">gannan-china-map-pack.html</a></td>
+<td>出发前用高德/百度和司机定位二次确认</td>
+</tr>
+<tr class="odd">
+<td>门票核验</td>
+<td>已完成策略级核验</td>
+<td><a href="甘南莲宝叶则_核验记录.md">甘南莲宝叶则_核验记录.md</a></td>
+<td>T-7/T-3/T-1 查官方小程序、OTA 和酒店前台</td>
+</tr>
+<tr class="even">
+<td>扎尕那票价冲突处理</td>
+<td>已完成</td>
+<td>核验记录“动态项冲突处理”</td>
+<td>出发前以官方小程序/当日售票为准</td>
+</tr>
+<tr class="odd">
+<td>机票核验</td>
+<td>已完成框架</td>
+<td><a
+href="甘南莲宝叶则_预算与订单核验表.md">甘南莲宝叶则_预算与订单核验表.md</a></td>
+<td>出发城市、日期、人数、行李、退改偏好</td>
+</tr>
+<tr class="even">
+<td>酒店核验</td>
+<td>已完成框架</td>
+<td>预算工作台、核验记录、沟通 Checklist、询价消息包</td>
+<td>日期、人数、房型、预算；电话确认热水/供暖/停车</td>
+</tr>
+<tr class="odd">
+<td>包车/租车核验</td>
+<td>已完成框架</td>
+<td>预算工作台、沟通 Checklist、询价消息包</td>
+<td>至少 3 个报价，确认费用包含项</td>
+</tr>
+<tr class="even">
+<td>装备</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_装备Checklist.md">甘南莲宝叶则_装备Checklist.md</a></td>
+<td>按个人器材补勾</td>
+</tr>
+<tr class="odd">
+<td>司机/酒店/景区话术</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_沟通Checklist.md">甘南莲宝叶则_沟通Checklist.md</a></td>
+<td>实际联系人和电话号码</td>
+</tr>
+<tr class="even">
+<td>出发前询价模板</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_询价消息包.md">甘南莲宝叶则_询价消息包.md</a></td>
+<td>日期确定后发给司机、租车门店、酒店和景区</td>
+</tr>
+<tr class="odd">
+<td>外部来源台账</td>
+<td>已完成</td>
+<td><a href="甘南莲宝叶则_来源台账.md">甘南莲宝叶则_来源台账.md</a>、<a
+href="data/gannan_source_ledger.csv">data/gannan_source_ledger.csv</a>、<a
+href="scripts/check_gannan_sources.py">scripts/check_gannan_sources.py</a></td>
+<td>外链内容和订单价格仍需每轮实时打开复核</td>
+</tr>
+<tr class="even">
+<td>来源健康报告</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_来源健康报告.md">甘南莲宝叶则_来源健康报告.md</a>、<a
+href="scripts/gannan_source_health_report.py">scripts/gannan_source_health_report.py</a></td>
+<td>需要联网探测时运行
+<code>python3 scripts/gannan_source_health_report.py --online</code>，实际价格仍以订单页为准</td>
+</tr>
+<tr class="odd">
+<td>来源故障处理</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_来源故障处理.md">甘南莲宝叶则_来源故障处理.md</a>、<a
+href="scripts/gannan_source_fallbacks.py">scripts/gannan_source_fallbacks.py</a></td>
+<td>外链失败、403 或超时时按备选入口人工复核，并写入日志和证据归档</td>
+</tr>
+<tr class="even">
+<td>结构化订单候选表</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_订单候选模板.md">甘南莲宝叶则_订单候选模板.md</a>、<code>data/gannan_*_candidates.template.csv</code>、<a
+href="scripts/check_gannan_order_candidates.py">scripts/check_gannan_order_candidates.py</a></td>
+<td>实际日期和报价确定后填写</td>
+</tr>
+<tr class="odd">
+<td>订单核验接力包</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_订单核验接力包.md">甘南莲宝叶则_订单核验接力包.md</a>、<a
+href="scripts/gannan_order_handoff.py">scripts/gannan_order_handoff.py</a></td>
+<td>真实订单阶段先看当前停在哪、缺什么、下一条命令跑什么</td>
+</tr>
+<tr class="even">
+<td>订单启动工作流</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_订单启动工作流.md">甘南莲宝叶则_订单启动工作流.md</a>、<a
+href="scripts/gannan_order_start.py">scripts/gannan_order_start.py</a></td>
+<td>有出发日期后运行
+<code>python3 scripts/gannan_order_start.py --init-files --route-start-date YYYY-MM-DD</code></td>
+</tr>
+<tr class="odd">
+<td>候选评分卡</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_候选评分卡.md">甘南莲宝叶则_候选评分卡.md</a>、<a
+href="scripts/gannan_candidate_scorecard.py">scripts/gannan_candidate_scorecard.py</a></td>
+<td>真实候选填好后按证据、退改、价格和关键确认项排序；不能替代覆盖闸门</td>
+</tr>
+<tr class="even">
+<td>订单覆盖率闸门</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_订单覆盖率闸门.md">甘南莲宝叶则_订单覆盖率闸门.md</a>、<a
+href="scripts/check_gannan_order_coverage.py">scripts/check_gannan_order_coverage.py</a></td>
+<td>真实候选填好后检查去返程、D1-D8 酒店、车辆和核心门票是否完整</td>
+</tr>
+<tr class="odd">
+<td>订单复核报告</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_订单复核报告.md">甘南莲宝叶则_订单复核报告.md</a>、<a
+href="scripts/gannan_order_report.py">scripts/gannan_order_report.py</a></td>
+<td>实际候选 CSV 填好后自动汇总红旗、证据和下一步</td>
+</tr>
+<tr class="even">
+<td>下单决策闸门</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_下单决策闸门.md">甘南莲宝叶则_下单决策闸门.md</a>、<a
+href="scripts/gannan_booking_gate.py">scripts/gannan_booking_gate.py</a></td>
+<td>真实订单阶段用
+<code>python3 scripts/gannan_booking_gate.py --strict</code>
+判断能不能下单</td>
+</tr>
+<tr class="odd">
+<td>目标完成审计</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_目标完成审计.md">甘南莲宝叶则_目标完成审计.md</a>、<a
+href="scripts/audit_gannan_goal_completion.py">scripts/audit_gannan_goal_completion.py</a></td>
+<td>真实订单数据齐全后用 <code>--strict</code>
+判断完整目标是否可宣告完成</td>
+</tr>
+<tr class="even">
+<td>证据归档检查</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_证据归档规范.md">甘南莲宝叶则_证据归档规范.md</a>、<a
+href="evidence/gannan/README.md">evidence/gannan/README.md</a>、<a
+href="scripts/check_gannan_evidence.py">scripts/check_gannan_evidence.py</a></td>
+<td>真实订单填好后用 <code>--strict</code>
+检查截图/确认记录是否存在</td>
+</tr>
+<tr class="odd">
+<td>反复复核机制</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_反复核验SOP.md">甘南莲宝叶则_反复核验SOP.md</a>、<a
+href="data/gannan_reverification_log.template.csv">data/gannan_reverification_log.template.csv</a>、<a
+href="scripts/check_gannan_reverification_log.py">scripts/check_gannan_reverification_log.py</a></td>
+<td>实际每轮复核结果需要日期确定后填写</td>
+</tr>
+<tr class="even">
+<td>复核日程生成</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_复核日程生成.md">甘南莲宝叶则_复核日程生成.md</a>、<a
+href="scripts/gannan_reverification_schedule.py">scripts/gannan_reverification_schedule.py</a></td>
+<td>确定 D1 日期后生成 T-14/T-7/T-3/T-1 和 D-day 待复核日志</td>
+</tr>
+<tr class="odd">
+<td>复核日历导出</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_复核日历导出.md">甘南莲宝叶则_复核日历导出.md</a>、<a
+href="scripts/gannan_reverification_calendar.py">scripts/gannan_reverification_calendar.py</a></td>
+<td>确定 D1 日期后导出 ICS，导入手机/电脑日历提醒每轮复核</td>
+</tr>
+<tr class="even">
+<td>复核差异追踪</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_复核差异追踪.md">甘南莲宝叶则_复核差异追踪.md</a>、<a
+href="scripts/gannan_reverification_diff.py">scripts/gannan_reverification_diff.py</a></td>
+<td>真实日志填好后追踪涨价、状态变坏、blocked/fail 和缺下一步动作</td>
+</tr>
+<tr class="odd">
+<td>高原天气应急预案</td>
+<td>已完成</td>
+<td><a
+href="甘南莲宝叶则_高原天气应急预案.md">甘南莲宝叶则_高原天气应急预案.md</a>、来源台账中的
+CDC 和天气入口</td>
+<td>出发前按个人健康情况咨询医生；当天按天气/景区/司机信息执行</td>
+</tr>
+<tr class="even">
+<td>网页版</td>
+<td>已完成</td>
+<td><code>gannan*.html</code> 页面</td>
+<td>若发布到 GitHub Pages，可再接入部署配置</td>
+</tr>
+<tr class="odd">
+<td>路线图</td>
+<td>已完成</td>
+<td><a
+href="assets/route/gannan_route_overview.svg">assets/route/gannan_route_overview.svg</a></td>
+<td>无</td>
+</tr>
+<tr class="even">
+<td>本地完整性核验</td>
+<td>已完成</td>
+<td><a href="scripts/verify_gannan.py">scripts/verify_gannan.py</a></td>
+<td>每次改完运行 <code>python3 scripts/verify_gannan.py</code></td>
+</tr>
+<tr class="odd">
+<td>本地页面构建</td>
+<td>已完成</td>
+<td><a href="scripts/build_gannan.py">scripts/build_gannan.py</a>、<a
+href="gannan-nav.html">gannan-nav.html</a></td>
+<td>每次改 Markdown 后运行
+<code>python3 scripts/build_gannan.py</code></td>
+</tr>
+<tr class="even">
+<td>一键总核验</td>
+<td>已完成</td>
+<td><a
+href="scripts/run_gannan_checks.py">scripts/run_gannan_checks.py</a></td>
+<td>默认跑构建、完整性、来源、候选模板、复核日志；真实订单填好后加
+<code>--actual</code></td>
+</tr>
+<tr class="odd">
+<td>订单输入模板</td>
+<td>已完成</td>
+<td><a
+href="data/gannan_order_inputs.template.json">data/gannan_order_inputs.template.json</a>、<a
+href="scripts/check_gannan_inputs.py">scripts/check_gannan_inputs.py</a></td>
+<td>填好后运行
+<code>python3 scripts/check_gannan_inputs.py data/gannan_order_inputs.json</code></td>
+</tr>
+<tr class="even">
+<td>出行信息填写器</td>
+<td>已完成</td>
+<td><a href="gannan-input-wizard.html">gannan-input-wizard.html</a></td>
+<td>用户填写后复制 JSON 到
+<code>data/gannan_order_inputs.json</code></td>
+</tr>
+<tr class="odd">
+<td>Checklist 本地保存</td>
+<td>已完成</td>
+<td><a href="gannan-app.js">gannan-app.js</a>、<a
+href="gannan-after-body.html">gannan-after-body.html</a></td>
+<td>甘南生成页的勾选状态会保存在当前浏览器</td>
+</tr>
+</tbody>
+</table>
+<h2 id="不能提前写死的项目">不能提前写死的项目</h2>
+<table>
+<thead>
+<tr class="header">
+<th>项目</th>
+<th>为什么不能提前写死</th>
+<th>何时复核</th>
+<th>复核口径</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>机票/高铁成交价</td>
+<td>日期、出发城市、行李、退改规则决定价格</td>
+<td>T-14/T-7/T-3</td>
+<td>航司 App/12306 + OTA，按最终含税价</td>
+</tr>
+<tr class="even">
+<td>酒店成交价</td>
+<td>旺季房态、房型、是否可取消变化很大</td>
+<td>T-14/T-7</td>
+<td>OTA 下单页 + 酒店电话</td>
+</tr>
+<tr class="odd">
+<td>包车/租车报价</td>
+<td>车型、天数、司机食宿、油费、高速、停车差异大</td>
+<td>T-14/T-7</td>
+<td>至少 3 家报价，写清包含项</td>
+</tr>
+<tr class="even">
+<td>扎尕那票价</td>
+<td>公开平台有 80、80+40、110 等口径</td>
+<td>T-7/T-3/T-1</td>
+<td>官方小程序/景区公告/酒店确认</td>
+</tr>
+<tr class="odd">
+<td>莲宝叶则开放范围</td>
+<td>高海拔景区受天气、道路、管理影响</td>
+<td>T-3/T-1/当天早上</td>
+<td>景区公告、酒店前台、司机当地消息</td>
+</tr>
+<tr class="even">
+<td>花湖/黄河九曲组合票</td>
+<td>门票、观光车、扶梯组合可能变化</td>
+<td>T-1</td>
+<td>按是否追日落和体力选择</td>
+</tr>
+<tr class="odd">
+<td>天气和路况</td>
+<td>甘南/阿坝午后雷阵雨、塌方、施工强时效</td>
+<td>T-3/T-1/当天</td>
+<td>中国天气、中央气象台、司机当地消息</td>
+</tr>
+</tbody>
+</table>
+<h2 id="出行信息收集表">出行信息收集表</h2>
+<p>把下面信息补齐后，就可以把预算工作台从“模板”推进到“候选订单”。</p>
+<pre class="text"><code>出发城市：
+出发日期：
+返程日期：
+人数：
+房间数 / 房型：
+是否自驾：
+是否接受包车：
+酒店预算：
+是否必须住景观民宿：
+是否带无人机：
+摄影器材：
+能接受的日均车程：
+是否有高原反应史：</code></pre>
+<p>也可以复制结构化模板填写：</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> data/gannan_order_inputs.template.json data/gannan_order_inputs.json</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/check_gannan_inputs.py data/gannan_order_inputs.json</span></code></pre></div>
+<h2 id="下单前签字式检查">下单前签字式检查</h2>
+<ul class="task-list">
+<li><label><input
+type="checkbox" />机票/高铁不是只看最低价，已确认行李和退改</label></li>
+<li><label><input type="checkbox" />D0/D9 不被航班时间压缩</label></li>
+<li><label><input
+type="checkbox" />包车/租车费用包含项写清楚</label></li>
+<li><label><input
+type="checkbox" />夏河、扎尕那、阿坝县酒店已电话确认热水、供暖、停车、早出门</label></li>
+<li><label><input
+type="checkbox" />扎尕那门票和观光车口径已二次确认</label></li>
+<li><label><input
+type="checkbox" />莲宝叶则开放范围、最早入园、最晚离园已二次确认</label></li>
+<li><label><input
+type="checkbox" />花湖/黄河九曲是否买组合票已按当天计划确认</label></li>
+<li><label><input type="checkbox" />保险已买</label></li>
+<li><label><input type="checkbox" />机动预算至少 10%</label></li>
+<li><label><input type="checkbox" />所有订单截图离线保存</label></li>
+</ul>
+<h2 id="本地页面完整性核验">本地页面完整性核验</h2>
+<p>每次修改甘南攻略包后，先重新生成 HTML，再运行核验：</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/build_gannan.py</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/verify_gannan.py</span></code></pre></div>
+<p>其中 <code>build_gannan.py</code> 会给所有 Pandoc
+生成的甘南页面加统一顶部导航；<code>verify_gannan.py</code>
+会检查文件、关键章节、站内链接和原印尼页面的“甘南攻略”入口。</p>
+<p>单独运行核验命令：</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> scripts/verify_gannan.py</span></code></pre></div>
+<p>通过时会输出：</p>
+<pre class="text"><code>Gannan guide verification passed.</code></pre>
+<h2 id="当前结论">当前结论</h2>
+<p>这套攻略已经满足“可执行攻略包”的要求：有路线、有机位、有摄影执行、有装备、有沟通话术、有门票/酒店/机票核验框架、有预算工作台、有路线图和网页入口。</p>
+<p>它还不能替代“实际日期的订单核验”：没有出发日期、人数和预算时，写死具体机票和酒店价格反而会误导。下一步只需要补齐出行信息，就能把候选航班、候选酒店、包车报价和门票预约逐项填进预算工作台。</p>
+<script src="gannan-app.js"></script>
+</body>
+</html>

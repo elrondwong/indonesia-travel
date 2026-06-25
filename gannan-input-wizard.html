@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>甘南 + 莲宝叶则订单输入填写器</title>
+  <meta name="description" content="把甘南与莲宝叶则订单级核验所需信息生成成可复制 JSON。">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .wizard-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 420px;
+      gap: 22px;
+      width: min(1380px, calc(100% - 32px));
+      margin: 28px auto 56px;
+    }
+    .wizard-card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .wizard-card h2 {
+      margin-top: 0;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+    .field.full {
+      grid-column: 1 / -1;
+    }
+    label {
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 900;
+    }
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 40px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: #fff;
+      font: inherit;
+    }
+    textarea {
+      min-height: 88px;
+      resize: vertical;
+    }
+    .check-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+    }
+    .check-row label {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .check-row input {
+      width: 18px;
+      min-height: 18px;
+      accent-color: var(--green);
+    }
+    .output-panel {
+      position: sticky;
+      top: 104px;
+      align-self: start;
+      display: grid;
+      gap: 14px;
+    }
+    .status-box {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+    .status-box.ready {
+      border-color: #b8dbc7;
+      background: #f0faf4;
+    }
+    .status-box.warn {
+      border-color: #f0d6a6;
+      background: #fff8eb;
+    }
+    .status-box h3 {
+      margin-top: 0;
+      font-size: 17px;
+    }
+    .status-box ul {
+      margin: 8px 0 0;
+    }
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .button {
+      min-height: 40px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--navy);
+      color: #fff;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .button.secondary {
+      background: #fff;
+      color: var(--navy);
+    }
+    .json-output {
+      min-height: 460px;
+      margin: 0;
+      white-space: pre;
+    }
+    .hint {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 1060px) {
+      .wizard-shell {
+        grid-template-columns: 1fr;
+      }
+      .output-panel {
+        position: static;
+      }
+    }
+    @media (max-width: 720px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .wizard-card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-main">
+      <p class="eyebrow">Gannan Order Input Wizard</p>
+      <h1>甘南 + 莲宝叶则订单输入填写器</h1>
+    </div>
+    <div class="topbar-actions">
+      <a href="gannan-dashboard.html">总控台</a>
+      <a href="gannan-order-workbench.html">预算订单</a>
+      <a href="gannan-order-candidates.html">订单候选</a>
+      <a href="gannan-reverification-sop.html">反复复核</a>
+    </div>
+  </header>
+
+  <main class="wizard-shell">
+    <section class="wizard-card">
+      <h2>出行信息</h2>
+      <div class="form-grid">
+        <div class="field">
+          <label for="origin_city">出发城市</label>
+          <input id="origin_city" data-path="trip.origin_city" placeholder="例如：深圳 / 广州 / 上海">
+        </div>
+        <div class="field">
+          <label for="arrival_city">到达城市</label>
+          <input id="arrival_city" data-path="trip.arrival_city" value="兰州">
+        </div>
+        <div class="field">
+          <label for="departure_date">出发日期</label>
+          <input id="departure_date" data-path="trip.departure_date" type="date">
+        </div>
+        <div class="field">
+          <label for="return_date">返程日期</label>
+          <input id="return_date" data-path="trip.return_date" type="date">
+        </div>
+        <div class="field">
+          <label for="travelers">人数</label>
+          <input id="travelers" data-path="trip.travelers" type="number" min="1" step="1">
+        </div>
+        <div class="field">
+          <label for="rooms">房间数</label>
+          <input id="rooms" data-path="trip.rooms" type="number" min="1" step="1">
+        </div>
+        <div class="field">
+          <label for="room_type">房型</label>
+          <input id="room_type" data-path="trip.room_type" placeholder="例如：大床 / 双床 / 2间双床">
+        </div>
+        <div class="field">
+          <label for="route_version">路线版本</label>
+          <select id="route_version" data-path="trip.route_version">
+            <option>9天8晚</option>
+            <option>8天压缩版</option>
+            <option>10天舒缓版</option>
+            <option>待定</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="transport_preference">交通偏好</label>
+          <select id="transport_preference" data-path="trip.transport_preference">
+            <option value="">待选择</option>
+            <option>包车</option>
+            <option>自驾</option>
+            <option>包车/自驾都比较</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="hotel_budget_per_room_night">每间夜酒店预算</label>
+          <input id="hotel_budget_per_room_night" data-path="trip.hotel_budget_per_room_night" type="number" min="0" step="50" placeholder="人民币">
+        </div>
+        <div class="field">
+          <label for="total_budget">总预算</label>
+          <input id="total_budget" data-path="trip.total_budget" type="number" min="0" step="500" placeholder="人民币，可选">
+        </div>
+        <div class="field">
+          <label for="max_daily_drive_hours">可接受日均车程</label>
+          <input id="max_daily_drive_hours" data-path="preferences.max_daily_drive_hours" type="number" min="1" step="0.5" placeholder="小时">
+        </div>
+      </div>
+
+      <h2>偏好和约束</h2>
+      <div class="form-grid">
+        <div class="field full">
+          <label>可接受方案</label>
+          <div class="check-row">
+            <label><input type="checkbox" data-path="preferences.accept_charter" checked>接受包车</label>
+            <label><input type="checkbox" data-path="preferences.accept_self_drive" checked>接受自驾</label>
+            <label><input type="checkbox" data-path="preferences.accept_chengdu_exit">可考虑成都出</label>
+            <label><input type="checkbox" data-path="preferences.must_have_scenic_guesthouse">必须景观民宿</label>
+            <label><input type="checkbox" data-path="preferences.bring_drone">带无人机</label>
+          </div>
+        </div>
+        <div class="field full">
+          <label for="camera_gear">摄影器材</label>
+          <textarea id="camera_gear" data-path="preferences.camera_gear" placeholder="例如：机身2台，14-24、24-105、70-200，三脚架，无人机"></textarea>
+        </div>
+        <div class="field">
+          <label for="altitude_sickness_history">高原反应史</label>
+          <input id="altitude_sickness_history" data-path="preferences.altitude_sickness_history" placeholder="无 / 有，说明症状">
+        </div>
+        <div class="field">
+          <label for="pace">节奏偏好</label>
+          <input id="pace" data-path="preferences.pace" value="摄影优先，不赶夜路">
+        </div>
+        <div class="field">
+          <label for="earliest_departure_time">最早可出发时间</label>
+          <input id="earliest_departure_time" data-path="constraints.earliest_departure_time" type="time">
+        </div>
+        <div class="field">
+          <label for="latest_return_arrival_time">返程最晚到达时间</label>
+          <input id="latest_return_arrival_time" data-path="constraints.latest_return_arrival_time" type="time">
+        </div>
+        <div class="field">
+          <label for="luggage_needs">行李/托运需求</label>
+          <input id="luggage_needs" data-path="constraints.luggage_needs" placeholder="例如：每人1个24寸箱 + 摄影包">
+        </div>
+        <div class="field">
+          <label for="flight_refund_preference">机票退改偏好</label>
+          <input id="flight_refund_preference" data-path="constraints.flight_refund_preference" placeholder="例如：优先可改签 / 接受特价不可退">
+        </div>
+        <div class="field">
+          <label for="hotel_cancellation_preference">酒店取消偏好</label>
+          <input id="hotel_cancellation_preference" data-path="constraints.hotel_cancellation_preference" value="优先可取消">
+        </div>
+        <div class="field">
+          <label for="diet_or_health_notes">饮食/健康备注</label>
+          <input id="diet_or_health_notes" data-path="constraints.diet_or_health_notes" placeholder="过敏、慢病、忌口等">
+        </div>
+      </div>
+
+      <h2>联系人</h2>
+      <div class="form-grid">
+        <div class="field">
+          <label for="primary_contact">主要联系人</label>
+          <input id="primary_contact" data-path="contacts.primary_contact">
+        </div>
+        <div class="field">
+          <label for="phone">电话</label>
+          <input id="phone" data-path="contacts.phone">
+        </div>
+        <div class="field full">
+          <label for="emergency_contact">紧急联系人</label>
+          <input id="emergency_contact" data-path="contacts.emergency_contact">
+        </div>
+      </div>
+    </section>
+
+    <aside class="output-panel">
+      <section id="statusBox" class="status-box warn">
+        <h3>订单级核验状态</h3>
+        <div id="statusContent"></div>
+      </section>
+      <section class="wizard-card">
+        <h2>生成 JSON</h2>
+        <p class="hint">复制后可保存为 <code>data/gannan_order_inputs.json</code>，再运行 <code>python3 scripts/check_gannan_inputs.py data/gannan_order_inputs.json</code>。</p>
+        <div class="action-row">
+          <button class="button" type="button" id="copyJson">复制 JSON</button>
+          <button class="button secondary" type="button" id="resetForm">清空</button>
+        </div>
+        <pre class="json-output" id="jsonOutput"></pre>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    const baseData = {
+      trip: {
+        origin_city: "",
+        arrival_city: "兰州",
+        departure_date: "",
+        return_date: "",
+        travelers: null,
+        rooms: null,
+        room_type: "",
+        route_version: "9天8晚",
+        transport_preference: "",
+        hotel_budget_per_room_night: null,
+        total_budget: null
+      },
+      preferences: {
+        accept_charter: true,
+        accept_self_drive: true,
+        accept_chengdu_exit: false,
+        must_have_scenic_guesthouse: false,
+        bring_drone: false,
+        camera_gear: "",
+        max_daily_drive_hours: null,
+        altitude_sickness_history: "",
+        pace: "摄影优先，不赶夜路"
+      },
+      constraints: {
+        earliest_departure_time: "",
+        latest_return_arrival_time: "",
+        luggage_needs: "",
+        flight_refund_preference: "",
+        hotel_cancellation_preference: "优先可取消",
+        diet_or_health_notes: ""
+      },
+      contacts: {
+        primary_contact: "",
+        phone: "",
+        emergency_contact: ""
+      }
+    };
+
+    const requiredFields = [
+      ["trip.origin_city", "出发城市"],
+      ["trip.departure_date", "出发日期"],
+      ["trip.return_date", "返程日期"],
+      ["trip.travelers", "人数"],
+      ["trip.rooms", "房间数"],
+      ["trip.transport_preference", "交通偏好"],
+      ["trip.hotel_budget_per_room_night", "每间夜酒店预算"],
+      ["preferences.camera_gear", "摄影器材"],
+      ["preferences.max_daily_drive_hours", "可接受日均车程"]
+    ];
+
+    const recommendedFields = [
+      ["trip.total_budget", "总预算"],
+      ["constraints.luggage_needs", "行李/托运需求"],
+      ["constraints.flight_refund_preference", "机票退改偏好"],
+      ["constraints.latest_return_arrival_time", "返程最晚到达时间"],
+      ["contacts.primary_contact", "主要联系人"]
+    ];
+
+    function cloneBase() {
+      return JSON.parse(JSON.stringify(baseData));
+    }
+
+    function setDeep(object, path, value) {
+      const parts = path.split(".");
+      let current = object;
+      for (let index = 0; index < parts.length - 1; index += 1) {
+        current = current[parts[index]];
+      }
+      current[parts[parts.length - 1]] = value;
+    }
+
+    function getDeep(object, path) {
+      return path.split(".").reduce((current, part) => current && current[part], object);
+    }
+
+    function normalizeValue(input) {
+      if (input.type === "checkbox") {
+        return input.checked;
+      }
+      if (input.type === "number") {
+        return input.value === "" ? null : Number(input.value);
+      }
+      return input.value.trim();
+    }
+
+    function buildData() {
+      const data = cloneBase();
+      document.querySelectorAll("[data-path]").forEach((input) => {
+        setDeep(data, input.dataset.path, normalizeValue(input));
+      });
+      return data;
+    }
+
+    function isFilled(value) {
+      if (value === null || value === undefined) {
+        return false;
+      }
+      if (typeof value === "string") {
+        return value.trim().length > 0;
+      }
+      if (typeof value === "number") {
+        return value > 0;
+      }
+      return true;
+    }
+
+    function renderStatus(data) {
+      const missingRequired = requiredFields
+        .filter(([path]) => !isFilled(getDeep(data, path)))
+        .map(([, label]) => label);
+      const missingRecommended = recommendedFields
+        .filter(([path]) => !isFilled(getDeep(data, path)))
+        .map(([, label]) => label);
+      const statusBox = document.getElementById("statusBox");
+      const content = document.getElementById("statusContent");
+      if (missingRequired.length === 0) {
+        statusBox.className = "status-box ready";
+        content.innerHTML = `<p>必填信息已齐，可以开始机票/酒店/车辆/门票候选比价。</p>${missingRecommended.length ? `<p>建议补充：</p><ul>${missingRecommended.map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}`;
+      } else {
+        statusBox.className = "status-box warn";
+        content.innerHTML = `<p>还缺这些必填信息：</p><ul>${missingRequired.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+      }
+    }
+
+    function updateOutput() {
+      const data = buildData();
+      document.getElementById("jsonOutput").textContent = JSON.stringify(data, null, 2);
+      renderStatus(data);
+    }
+
+    document.querySelectorAll("[data-path]").forEach((input) => {
+      input.addEventListener("input", updateOutput);
+      input.addEventListener("change", updateOutput);
+    });
+
+    document.getElementById("copyJson").addEventListener("click", async () => {
+      const text = document.getElementById("jsonOutput").textContent;
+      await navigator.clipboard.writeText(text);
+      document.getElementById("copyJson").textContent = "已复制";
+      window.setTimeout(() => {
+        document.getElementById("copyJson").textContent = "复制 JSON";
+      }, 1200);
+    });
+
+    document.getElementById("resetForm").addEventListener("click", () => {
+      document.querySelectorAll("[data-path]").forEach((input) => {
+        const defaultValue = getDeep(baseData, input.dataset.path);
+        if (input.type === "checkbox") {
+          input.checked = Boolean(defaultValue);
+        } else {
+          input.value = defaultValue ?? "";
+        }
+      });
+      updateOutput();
+    });
+
+    updateOutput();
+  </script>
+</body>
+</html>

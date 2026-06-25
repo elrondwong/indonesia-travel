@@ -1,0 +1,1 @@
+option_id,direction,platform,carrier_or_railway,flight_or_train_no,origin,destination,depart_date,depart_time,arrival_date,arrival_time,final_price_cny,baggage_or_luggage,refund_change_policy,arrival_transfer,booking_url,evidence_file,status,decision,next_action,notes

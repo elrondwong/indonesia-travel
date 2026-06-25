@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>甘南 + 莲宝叶则国内地图导航包</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="gannan-page.css" />
+</head>
+<body>
+<header class="gannan-topbar">
+  <div class="gannan-topbar-main">
+    <p class="eyebrow">Gannan Photo Route Guide</p>
+    <strong>甘南 + 莲宝叶则摄影攻略</strong>
+  </div>
+  <nav class="gannan-topbar-actions" aria-label="甘南攻略导航">
+    <a href="gannan-dashboard.html">总控台</a>
+    <a href="gannan.html">主攻略</a>
+    <a href="gannan-daily-cards.html">每日卡</a>
+    <a href="gannan-mobile-pack.html">速查</a>
+    <a href="gannan-photo-handbook.html">摄影</a>
+    <a href="gannan-light-astro.html">光线</a>
+    <a href="gannan-shot-list.html">出片</a>
+    <a href="gannan-photo-readiness.html">出片闸门</a>
+    <a href="gannan-photo-map.html">机位</a>
+    <a href="gannan-photo-spot-check.html">机位核验</a>
+    <a href="gannan-china-map-pack.html">导航</a>
+    <a href="gannan-source-ledger.html">来源</a>
+    <a href="gannan-source-health.html">来源健康</a>
+    <a href="gannan-source-fallbacks.html">故障处理</a>
+    <a href="gannan-evidence-archive.html">证据</a>
+    <a href="gannan-quote-templates.html">询价</a>
+    <a href="gannan-order-workbench.html">预算</a>
+    <a href="gannan-order-handoff.html">接力</a>
+    <a href="gannan-order-start.html">启动</a>
+    <a href="gannan-order-candidates.html">候选</a>
+    <a href="gannan-candidate-scorecard.html">评分</a>
+    <a href="gannan-order-coverage.html">覆盖</a>
+    <a href="gannan-order-report.html">报告</a>
+    <a href="gannan-booking-gate.html">下单</a>
+    <a href="gannan-goal-audit.html">目标审计</a>
+    <a href="gannan-reverification-sop.html">复核</a>
+    <a href="gannan-reverification-schedule.html">日程</a>
+    <a href="gannan-reverification-calendar.html">日历</a>
+    <a href="gannan-reverification-diff.html">差异</a>
+    <a href="gannan-contingency-plan.html">应急</a>
+    <a href="gannan-final-audit.html">核验</a>
+  </nav>
+</header>
+<header id="title-block-header">
+<h1 class="title">甘南 + 莲宝叶则国内地图导航包</h1>
+</header>
+<h1 id="甘南--莲宝叶则国内地图导航包">甘南 + 莲宝叶则国内地图导航包</h1>
+<p>更新日期：2026-06-25<br />
+对应机位索引：<a
+href="甘南莲宝叶则_机位地图索引.md">甘南莲宝叶则_机位地图索引.md</a><br />
+对应每日执行卡：<a
+href="甘南莲宝叶则_每日执行卡.md">甘南莲宝叶则_每日执行卡.md</a></p>
+<p>这份文件面向现场导航。原则是：国内现场优先用高德/百度、司机发的
+pin、酒店定位和景区官方指引；Google Maps
+只做路线关系参考。不要把搜索结果当成停车点，尤其扎尕那、莲宝叶则、黄河九曲这种景区内交通会变的地方。</p>
+<h2 id="使用规则">使用规则</h2>
+<ol type="1">
+<li>每天晚上先让司机或酒店确认第二天第一个定位点。</li>
+<li>搜索结果出现多个同名点时，优先核对县/州：夏河、合作、迭部、若尔盖、阿坝县。</li>
+<li>景区内停车、观光车、步行入口和闭园时间，以现场牌示和工作人员为准。</li>
+<li>日出/日落机位不要只靠地图，必须问民宿、司机和当天开放范围。</li>
+<li>离线前把当天高德/百度路线、酒店地址、门票二维码和司机电话截图保存。</li>
+</ol>
+<h2 id="每日导航顺序">每日导航顺序</h2>
+<table>
+<thead>
+<tr class="header">
+<th>天数</th>
+<th>高德/百度搜索顺序</th>
+<th>司机确认点</th>
+<th>不能错过</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D0</td>
+<td>兰州中川机场 / 兰州西站 / 兰州市区酒店</td>
+<td>取车点、停车点、补给点</td>
+<td>不夜间长途</td>
+</tr>
+<tr class="even">
+<td>D1</td>
+<td>兰州 → 夏河拉卜楞寺 → 贡唐宝塔 → 桑科草原 → 夏河酒店</td>
+<td>夏河酒店停车、桑科返回时间</td>
+<td>20:30 前回夏河</td>
+</tr>
+<tr class="odd">
+<td>D2</td>
+<td>夏河 → 八角城 → 白石崖 → 合作酒店 → 米拉日巴佛阁</td>
+<td>甘加路况、合作酒店停车</td>
+<td>甘加不要拖到天黑</td>
+</tr>
+<tr class="even">
+<td>D3</td>
+<td>合作 → 扎尕那民宿 → 达日观景台/业日村</td>
+<td>扎尕那门票口、民宿停车、单一日落点</td>
+<td>天黑后不换机位</td>
+</tr>
+<tr class="odd">
+<td>D4</td>
+<td>扎尕那民宿 → 日出点 → 仙女滩/栈道 → 村寨傍晚点</td>
+<td>清晨出门路线、栈道开放</td>
+<td>雨后不进危险沟谷</td>
+</tr>
+<tr class="even">
+<td>D5</td>
+<td>扎尕那 → 郎木寺 → 若尔盖花湖 → 黄河九曲第一湾 → 唐克/若尔盖酒店</td>
+<td>花湖停留时长、黄河最晚入园</td>
+<td>17:00 前到唐克区域</td>
+</tr>
+<tr class="odd">
+<td>D6</td>
+<td>唐克/若尔盖 → 瓦切塔林/红原可选 → 阿坝县酒店</td>
+<td>加油点、阿坝县酒店停车</td>
+<td>下午到阿坝县休整</td>
+</tr>
+<tr class="even">
+<td>D7</td>
+<td>阿坝县 → 莲宝叶则 → 阿坝县</td>
+<td>景区入口、开放范围、最晚离园</td>
+<td>高反/雷雨立刻降强度</td>
+</tr>
+<tr class="odd">
+<td>D8</td>
+<td>阿坝县 → 合作/临夏</td>
+<td>返程路况、午餐点、住宿停车</td>
+<td>不直冲兰州机场</td>
+</tr>
+<tr class="even">
+<td>D9</td>
+<td>合作/临夏 → 兰州机场/兰州西站</td>
+<td>还车点、机场/高铁站时间</td>
+<td>返程前 3 小时到站更稳</td>
+</tr>
+</tbody>
+</table>
+<h2 id="核心点位搜索入口">核心点位搜索入口</h2>
+<table>
+<thead>
+<tr class="header">
+<th>天数</th>
+<th>点位</th>
+<th>复制搜索关键词</th>
+<th>高德</th>
+<th>百度</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D1</td>
+<td>拉卜楞寺</td>
+<td>夏河 拉卜楞寺</td>
+<td><a
+href="https://www.amap.com/search?query=夏河%20拉卜楞寺">高德</a></td>
+<td><a href="https://map.baidu.com/search/夏河%20拉卜楞寺">百度</a></td>
+</tr>
+<tr class="even">
+<td>D1</td>
+<td>贡唐宝塔</td>
+<td>夏河 贡唐宝塔</td>
+<td><a
+href="https://www.amap.com/search?query=夏河%20贡唐宝塔">高德</a></td>
+<td><a href="https://map.baidu.com/search/夏河%20贡唐宝塔">百度</a></td>
+</tr>
+<tr class="odd">
+<td>D1</td>
+<td>桑科草原</td>
+<td>夏河 桑科草原</td>
+<td><a
+href="https://www.amap.com/search?query=夏河%20桑科草原">高德</a></td>
+<td><a href="https://map.baidu.com/search/夏河%20桑科草原">百度</a></td>
+</tr>
+<tr class="even">
+<td>D2</td>
+<td>八角城</td>
+<td>夏河 八角城</td>
+<td><a
+href="https://www.amap.com/search?query=夏河%20八角城">高德</a></td>
+<td><a href="https://map.baidu.com/search/夏河%20八角城">百度</a></td>
+</tr>
+<tr class="odd">
+<td>D2</td>
+<td>白石崖</td>
+<td>甘加 白石崖</td>
+<td><a
+href="https://www.amap.com/search?query=甘加%20白石崖">高德</a></td>
+<td><a href="https://map.baidu.com/search/甘加%20白石崖">百度</a></td>
+</tr>
+<tr class="even">
+<td>D2</td>
+<td>米拉日巴佛阁</td>
+<td>合作 米拉日巴佛阁</td>
+<td><a
+href="https://www.amap.com/search?query=合作%20米拉日巴佛阁">高德</a></td>
+<td><a
+href="https://map.baidu.com/search/合作%20米拉日巴佛阁">百度</a></td>
+</tr>
+<tr class="odd">
+<td>D3-D4</td>
+<td>扎尕那</td>
+<td>迭部 扎尕那</td>
+<td><a
+href="https://www.amap.com/search?query=迭部%20扎尕那">高德</a></td>
+<td><a href="https://map.baidu.com/search/迭部%20扎尕那">百度</a></td>
+</tr>
+<tr class="even">
+<td>D3-D4</td>
+<td>达日观景台</td>
+<td>扎尕那 达日观景台</td>
+<td><a
+href="https://www.amap.com/search?query=扎尕那%20达日观景台">高德</a></td>
+<td><a
+href="https://map.baidu.com/search/扎尕那%20达日观景台">百度</a></td>
+</tr>
+<tr class="odd">
+<td>D4</td>
+<td>仙女滩</td>
+<td>扎尕那 仙女滩</td>
+<td><a
+href="https://www.amap.com/search?query=扎尕那%20仙女滩">高德</a></td>
+<td><a href="https://map.baidu.com/search/扎尕那%20仙女滩">百度</a></td>
+</tr>
+<tr class="even">
+<td>D5</td>
+<td>郎木寺</td>
+<td>郎木寺镇 郎木寺</td>
+<td><a
+href="https://www.amap.com/search?query=郎木寺镇%20郎木寺">高德</a></td>
+<td><a
+href="https://map.baidu.com/search/郎木寺镇%20郎木寺">百度</a></td>
+</tr>
+<tr class="odd">
+<td>D5</td>
+<td>若尔盖花湖</td>
+<td>若尔盖 花湖</td>
+<td><a
+href="https://www.amap.com/search?query=若尔盖%20花湖">高德</a></td>
+<td><a href="https://map.baidu.com/search/若尔盖%20花湖">百度</a></td>
+</tr>
+<tr class="even">
+<td>D5</td>
+<td>黄河九曲第一湾</td>
+<td>唐克 黄河九曲第一湾</td>
+<td><a
+href="https://www.amap.com/search?query=唐克%20黄河九曲第一湾">高德</a></td>
+<td><a
+href="https://map.baidu.com/search/唐克%20黄河九曲第一湾">百度</a></td>
+</tr>
+<tr class="odd">
+<td>D6</td>
+<td>阿坝县</td>
+<td>阿坝县 酒店</td>
+<td><a
+href="https://www.amap.com/search?query=阿坝县%20酒店">高德</a></td>
+<td><a href="https://map.baidu.com/search/阿坝县%20酒店">百度</a></td>
+</tr>
+<tr class="even">
+<td>D7</td>
+<td>莲宝叶则</td>
+<td>阿坝县 莲宝叶则</td>
+<td><a
+href="https://www.amap.com/search?query=阿坝县%20莲宝叶则">高德</a></td>
+<td><a
+href="https://map.baidu.com/search/阿坝县%20莲宝叶则">百度</a></td>
+</tr>
+<tr class="odd">
+<td>D8</td>
+<td>合作市</td>
+<td>合作市 酒店</td>
+<td><a
+href="https://www.amap.com/search?query=合作市%20酒店">高德</a></td>
+<td><a href="https://map.baidu.com/search/合作市%20酒店">百度</a></td>
+</tr>
+<tr class="even">
+<td>D8</td>
+<td>临夏市</td>
+<td>临夏市 酒店</td>
+<td><a
+href="https://www.amap.com/search?query=临夏市%20酒店">高德</a></td>
+<td><a href="https://map.baidu.com/search/临夏市%20酒店">百度</a></td>
+</tr>
+<tr class="odd">
+<td>D9</td>
+<td>兰州中川机场</td>
+<td>兰州中川国际机场</td>
+<td><a
+href="https://www.amap.com/search?query=兰州中川国际机场">高德</a></td>
+<td><a
+href="https://map.baidu.com/search/兰州中川国际机场">百度</a></td>
+</tr>
+<tr class="even">
+<td>D9</td>
+<td>兰州西站</td>
+<td>兰州西站</td>
+<td><a href="https://www.amap.com/search?query=兰州西站">高德</a></td>
+<td><a href="https://map.baidu.com/search/兰州西站">百度</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="容易搜错--必须二次确认">容易搜错 / 必须二次确认</h2>
+<table>
+<thead>
+<tr class="header">
+<th>点位</th>
+<th>风险</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>扎尕那民宿</td>
+<td>村内民宿、停车点、景区入口可能不在同一个点</td>
+<td>让民宿发定位和停车照片，不只搜“扎尕那”</td>
+</tr>
+<tr class="even">
+<td>达日/业日机位</td>
+<td>地图点不一定等于可停车或可进入机位</td>
+<td>到达后只选一个点，问民宿和司机</td>
+</tr>
+<tr class="odd">
+<td>仙女滩/栈道</td>
+<td>雨后关闭或路滑</td>
+<td>D4 清晨问民宿/景区再决定</td>
+</tr>
+<tr class="even">
+<td>黄河九曲第一湾</td>
+<td>停车场、扶梯、观景台和酒店不是同一处</td>
+<td>17:00 前到唐克区域，先问最晚入园和下撤</td>
+</tr>
+<tr class="odd">
+<td>莲宝叶则</td>
+<td>景区入口、观光车/自驾规则、开放范围强时效</td>
+<td>D6 晚、D7 早二次确认，不只按地图导航</td>
+</tr>
+<tr class="even">
+<td>阿坝县酒店</td>
+<td>同名酒店、老店/新店、停车入口易混</td>
+<td>下单后让酒店发定位和停车入口照片</td>
+</tr>
+</tbody>
+</table>
+<h2 id="发给司机的定位确认话术">发给司机的定位确认话术</h2>
+<pre class="text"><code>师傅您好，明天我们先按这个顺序走：
+起点：____
+第一站：____
+第二站：____
+今日终点：____
+
+请您帮忙确认：
+1. 高德/百度这个定位是否准确？
+2. 停车点在哪里？
+3. 是否有施工、封路、限行或景区交通变化？
+4. 如果天气不好，应该先砍哪个点？
+5. 最晚几点必须离开，才能不走危险夜路？</code></pre>
+<h2 id="离线截图清单">离线截图清单</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />当天酒店定位和电话</label></li>
+<li><label><input
+type="checkbox" />当天第一站和终点导航路线</label></li>
+<li><label><input type="checkbox" />景区门票/预约二维码</label></li>
+<li><label><input type="checkbox" />景区开放时间和最晚离园</label></li>
+<li><label><input type="checkbox" />司机电话和车牌</label></li>
+<li><label><input type="checkbox" />加油点或补给点</label></li>
+<li><label><input type="checkbox" />返程中转酒店定位</label></li>
+</ul>
+<script src="gannan-app.js"></script>
+</body>
+</html>
